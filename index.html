@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="dark-purple">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Ultimate CBSE Letter Writing Ultra Portal ⚡</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- All 64+ Fonts Master Google Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=Barlow:wght@400;600&family=Cairo:wght@400;600&family=Caveat:wght@600&family=Chivo:wght@400;700&family=Cinzel:wght@600&family=Comfortaa:wght@600&family=Comic+Neue:wght@700&family=Cookie&family=Courgette&family=Courier+Prime:wght@400;700&family=Crimson+Text:wght@400;600&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@600&family=EB+Garamond:wght@400;600&family=Epilogue:wght@400;700&family=Exo+2:wght@400;700&family=Fira+Code:wght@500&family=Great+Vibes&family=Heebo:wght@400;700&family=Inconsolata:wght@400;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Josefin+Sans:wght@400;700&family=Kanit:wght@400;700&family=Karla:wght@400;700&family=Lato:wght@400;700&family=Lexend:wght@500&family=Lobster&family=Lora:wght@400;600&family=Manrope:wght@400;700&family=Merriweather:wght@400;700&family=Monoton&family=Montserrat:wght@400;600&family=Mukta:wght@400;700&family=Mulish:wght@400;700&family=Nunito:wght@400;600&family=Oleo+Script:wght@400;700&family=Open+Sans:wght@400;600&family=Orbitron:wght@600&family=Oswald:wght@400;600&family=Overpass:wght@400;700&family=Pacifico&family=Parisienne&family=Permanent+Marker&family=Philosopher:wght@400;700&family=Playfair+Display:wght@600&family=Poppins:wght@400;600&family=Prompt:wght@400;700&family=Quicksand:wght@500&family=Readex+Pro:wght@400;700&family=Red+Hat+Display:wght@400;700&family=Righteous&family=Roboto:wght@400;500&family=Sacramento&family=Satisfy&family=Source+Code+Pro:wght@400;700&family=Space+Mono:wght@400;700&family=Spectral:wght@400;600&family=Teko:wght@600&family=Ubuntu:wght@400;500&family=Varela+Round&family=Work+Sans:wght@400;700&family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- html2pdf Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <style>
+        /* --- CSS VARIABLES & ULTRA THEMES --- */
+        :root {
+            --bg-gradient: linear-gradient(135deg, #05070b 0%, #0f0c29 50%, #240b36 100%);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #a855f7;
+            --primary-hover: #9333ea;
+            --accent: #f43f5e;
+            --glow: rgba(168, 85, 247, 0.35);
+            --glass-blur: blur(25px);
+        }
+
+        [data-theme="emerald"] {
+            --bg-gradient: linear-gradient(135deg, #021a14 0%, #022c22 50%, #01130e 100%);
+            --primary: #10b981;
+            --primary-hover: #059669;
+            --accent: #34d399;
+            --glow: rgba(16, 185, 129, 0.4);
+        }
+
+        [data-theme="cyberpunk"] {
+            --bg-gradient: linear-gradient(135deg, #09090b 0%, #18181b 50%, #3f0d24 100%);
+            --primary: #f43f5e;
+            --primary-hover: #e11d48;
+            --accent: #fbbf24;
+            --glow: rgba(244, 63, 94, 0.5);
+        }
+
+        [data-theme="ocean"] {
+            --bg-gradient: linear-gradient(135deg, #020617 0%, #0c4a6e 50%, #082f49 100%);
+            --primary: #0ea5e9;
+            --primary-hover: #0284c7;
+            --accent: #38bdf8;
+            --glow: rgba(14, 165, 233, 0.4);
+        }
+
+        [data-theme="gold"] {
+            --bg-gradient: linear-gradient(135deg, #0f0e0a 0%, #292008 50%, #171204 100%);
+            --primary: #f59e0b;
+            --primary-hover: #d97706;
+            --accent: #fbbf24;
+            --glow: rgba(245, 158, 11, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+            transition: background 0.4s ease, border-color 0.4s ease;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Glow Background Element */
+        .ambient-glow {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: var(--glow);
+            filter: blur(160px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: floatGlow 14s infinite alternate ease-in-out;
+            pointer-events: none;
+        }
+        @keyframes floatGlow {
+            0% { transform: translate(-100px, -100px) scale(1); }
+            100% { transform: translate(200px, 250px) scale(1.2); }
+        }
+
+        /* --- HEADER & CONTROLS --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 5%;
+            backdrop-filter: var(--glass-blur);
+            background: rgba(10, 15, 30, 0.8);
+            border-bottom: 1px solid var(--card-border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-icon {
+            font-size: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: bounceIcon 2s infinite;
+        }
+        @keyframes bounceIcon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .logo-text h1 {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text span {
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* Live Clock Display in Header */
+        .live-clock-badge {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .control-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 9px 16px;
+            border-radius: 14px;
+            outline: none;
+            cursor: pointer;
+            backdrop-filter: var(--glass-blur);
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-weight: 500;
+        }
+        .control-btn:hover {
+            border-color: var(--primary);
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-2px);
+        }
+
+        .theme-selector {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 9px 16px;
+            border-radius: 14px;
+            outline: none;
+            cursor: pointer;
+            backdrop-filter: var(--glass-blur);
+            font-weight: 600;
+        }
+        .theme-selector option {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 30px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.25;
+        }
+
+        .hero h2 span {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+
+        /* Search & Filter Bar with Voice Search */
+        .search-container {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 16px 55px 16px 55px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 50px;
+            color: var(--text-main);
+            font-size: 15px;
+            outline: none;
+            backdrop-filter: var(--glass-blur);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .search-container input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px var(--glow);
+        }
+
+        .search-container .fa-magnifying-glass {
+            position: absolute;
+            left: 22px;
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+
+        .mic-btn {
+            position: absolute;
+            right: 18px;
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            transition: transform 0.2s;
+        }
+        .mic-btn:hover { transform: scale(1.25); }
+
+        /* --- CATEGORY CHIPS FILTER --- */
+        .category-chips {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 0 15px;
+        }
+
+        .chip {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-muted);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            cursor: pointer;
+            backdrop-filter: var(--glass-blur);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .chip.active, .chip:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px var(--glow);
+        }
+
+        /* --- STATS BAR --- */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto 45px;
+            padding: 0 20px;
+        }
+
+        .stat-box {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 24px;
+            border-radius: 22px;
+            text-align: center;
+            backdrop-filter: var(--glass-blur);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-box::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .stat-box h4 {
+            font-size: 30px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-box p {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* --- CARD GRID CONTAINER --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-muted);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Individual Card Design */
+        .letter-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 26px;
+            padding: 32px 26px;
+            backdrop-filter: var(--glass-blur);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        .letter-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .letter-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--primary);
+            box-shadow: 0 25px 55px var(--glow);
+        }
+
+        .letter-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .card-icon-box {
+            width: 68px;
+            height: 68px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: var(--primary);
+            transition: 0.3s;
+        }
+
+        .letter-card:hover .card-icon-box {
+            background: var(--primary);
+            color: #fff;
+            transform: rotate(8deg) scale(1.1);
+        }
+
+        .card-badges {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--card-border);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .bookmark-btn {
+            background: none;
+            border: 1px solid var(--card-border);
+            color: var(--text-muted);
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: 0.2s;
+        }
+        .bookmark-btn.bookmarked {
+            color: #f43f5e;
+            border-color: #f43f5e;
+            background: rgba(244, 63, 94, 0.1);
+        }
+
+        .card-content h3 {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.65;
+            margin-bottom: 25px;
+        }
+
+        .card-actions-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .card-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex: 1;
+            padding: 13px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+            color: #fff;
+            border: none;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 18px var(--glow);
+        }
+
+        .card-btn:hover {
+            opacity: 0.92;
+            transform: scale(1.02);
+        }
+
+        .preview-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 13px 16px;
+            border-radius: 16px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .preview-btn:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--primary);
+        }
+
+        /* --- FLOATING AI ASSISTANT WIDGET --- */
+        .ai-fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 10px 30px var(--glow);
+            cursor: pointer;
+            z-index: 1500;
+            transition: transform 0.3s;
+            border: none;
+        }
+        .ai-fab:hover { transform: scale(1.1) rotate(15deg); }
+
+        /* --- MODAL POPUPS --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-box {
+            background: #0d1322;
+            border: 1px solid var(--card-border);
+            width: 90%;
+            max-width: 750px;
+            border-radius: 28px;
+            padding: 35px;
+            box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+            transform: translateY(20px);
+            transition: 0.3s ease;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .modal-overlay.active .modal-box {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 15px;
+        }
+        .modal-header h3 { font-size: 22px; color: var(--primary); display: flex; align-items: center; gap: 10px; }
+        .close-modal {
+            background: none; border: none; color: #fff; font-size: 22px; cursor: pointer;
+        }
+
+        .modal-body p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .ai-output-box {
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid var(--card-border);
+            font-size: 14px;
+            min-height: 150px;
+            max-height: 280px;
+            overflow-y: auto;
+            color: var(--text-main);
+            white-space: pre-line;
+            line-height: 1.8;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            border-top: 1px solid var(--card-border);
+            color: var(--text-muted);
+            font-size: 14px;
+            background: rgba(10, 15, 30, 0.6);
+            backdrop-filter: var(--glass-blur);
+        }
+
+        footer span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 20px; }
+            .hero { padding: 35px 15px 20px; }
+            .card-actions-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glow Background Elements -->
+    <div class="ambient-glow" style="top: 10%; left: 15%;"></div>
+    <div class="ambient-glow" style="bottom: 10%; right: 15%;"></div>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="logo-text">
+                <h1>LetterCraft Ultra</h1>
+                <span>CBSE Master Hub 2026 ⚡</span>
+            </div>
+        </div>
+
+        <!-- Live Clock Display -->
+        <div class="live-clock-badge" id="liveClock">
+            <i class="fa-regular fa-clock"></i> <span id="clockTime">--:--:-- --</span>
+        </div>
+
+        <div class="header-actions">
+            <button class="control-btn" id="soundToggleBtn" onclick="toggleSound()">
+                <i class="fa-solid fa-volume-high" id="soundIcon"></i> Sound
+            </button>
+            <select class="theme-selector" id="themeSwitcher" onchange="changeTheme(this.value)">
+                <option value="dark-purple">🌌 Deep Purple</option>
+                <option value="emerald">🌿 Emerald Green</option>
+                <option value="cyberpunk">⚡ Cyberpunk Neon</option>
+                <option value="ocean">🌊 Oceanic Blue</option>
+                <option value="gold">🏆 Royal Gold</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Advanced AI <span>Letter Writing</span> Portal</h2>
+        <p>Generate professional, CBSE-compliant English letters instantly using Advanced AI Wizard and Voice Search. 🚀</p>
+        
+        <!-- Search & Filter Input -->
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search letters (e.g., Business, Job, Editor, Complaint)..." onkeyup="filterCards()">
+            <button class="mic-btn" onclick="startVoiceSearch()" title="Voice Search"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+
+        <!-- Category Filter Chips -->
+        <div class="category-chips">
+            <button class="chip active" onclick="filterCategory('all', this)">All Documents</button>
+            <button class="chip" onclick="filterCategory('cbse', this)">CBSE Class 12</button>
+            <button class="chip" onclick="filterCategory('business', this)">Business & Order</button>
+            <button class="chip" onclick="filterCategory('official', this)">Official & Govt</button>
+            <button class="chip" onclick="filterCategory('saved', this)">⭐ Bookmarked</button>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat-box">
+            <h4 id="visitCount">4,280+</h4>
+            <p>Total Letters Generated</p>
+        </div>
+        <div class="stat-box">
+            <h4>100%</h4>
+            <p>CBSE Exam Format Compliance</p>
+        </div>
+        <div class="stat-box">
+            <h4>🔥 5 Days</h4>
+            <p>Active Practice Streak</p>
+        </div>
+    </div>
+
+    <!-- CARDS CONTAINER -->
+    <div class="container">
+        <div class="section-title">
+            <i class="fa-solid fa-layer-group"></i> Available English Templates & Tools
+        </div>
+
+        <div class="cards-grid" id="cardsGrid">
+            
+            <!-- 1. Business Letter -->
+            <div class="letter-card" data-category="business cbse" data-title="business letter order complaint goods purchase items">
+                <div>
+                    <div class="card-top-row">
+                        <div class="card-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="card-badges">
+                            <div class="badge">CBSE 12</div>
+                            <button class="bookmark-btn" onclick="toggleBookmark(this, 'Business Letter')"><i class="fa-solid fa-star"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Business Letter</h3>
+                        <p>Official format for placing orders, cancelling supplies, or registering complaints regarding defective goods.</p>
+                    </div>
+                </div>
+                <div class="card-actions-group">
+                    <a href="Business Letter.html" class="card-btn" onclick="playClickSound()">
+                        <span>Open Editor</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button class="preview-btn" onclick="openPreview('Business Letter', 'Format includes Sender Address, Date, Receiver Address, Subject, Salutation, Body Paragraphs, and Subscription in professional English.')"><i class="fa-solid fa-eye"></i></button>
+                </div>
+            </div>
+
+            <!-- 2. Job Application with Bio-Data -->
+            <div class="letter-card" data-category="cbse" data-title="job application bio data resume cover letter interview opening">
+                <div>
+                    <div class="card-top-row">
+                        <div class="card-icon-box"><i class="fa-solid fa-id-card"></i></div>
+                        <div class="card-badges">
+                            <div class="badge">Popular</div>
+                            <button class="bookmark-btn" onclick="toggleBookmark(this, 'Job Application')"><i class="fa-solid fa-star"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Job Application</h3>
+                        <p>Complete cover letter and structured Bio-Data / Curriculum Vitae generator for any professional job vacancy.</p>
+                    </div>
+                </div>
+                <div class="card-actions-group">
+                    <a href="Job Application with Bio-Data.html" class="card-btn" onclick="playClickSound()">
+                        <span>Open Editor</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button class="preview-btn" onclick="openPreview('Job Application with Bio-Data', 'Features a two-part format: 1. Cover Letter application. 2. Comprehensive Bio-Data table including personal details, educational qualifications, and experience.')"><i class="fa-solid fa-eye"></i></button>
+                </div>
+            </div>
+
+            <!-- 3. Letter to Editor -->
+            <div class="letter-card" data-category="cbse" data-title="letter to editor social issues newspaper public opinion editorial">
+                <div>
+                    <div class="card-top-row">
+                        <div class="card-icon-box"><i class="fa-solid fa-newspaper"></i></div>
+                        <div class="card-badges">
+                            <div class="badge">Important</div>
+                            <button class="bookmark-btn" onclick="toggleBookmark(this, 'Letter to Editor')"><i class="fa-solid fa-star"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Letter to Editor</h3>
+                        <p>Draft impactful letters to newspaper editors regarding social issues, civic problems, and public awareness.</p>
+                    </div>
+                </div>
+                <div class="card-actions-group">
+                    <a href="Letter to the Editor.html" class="card-btn" onclick="playClickSound()">
+                        <span>Open Editor</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button class="preview-btn" onclick="openPreview('Letter to the Editor', 'Ideal for voicing opinions on topics like inflation, environmental pollution, reckless driving, and community welfare.')"><i class="fa-solid fa-eye"></i></button>
+                </div>
+            </div>
+
+            <!-- 4. Official Inquiry Complaint Letter -->
+            <div class="letter-card" data-category="official" data-title="official inquiry complaint letter government department civic issue water electricity">
+                <div>
+                    <div class="card-top-row">
+                        <div class="card-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+                        <div class="card-badges">
+                            <div class="badge">Official</div>
+                            <button class="bookmark-btn" onclick="toggleBookmark(this, 'Official & Inquiry')"><i class="fa-solid fa-star"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Official & Inquiry Letter</h3>
+                        <p>Write formal complaints and inquiries to government authorities or municipal bodies regarding civic amenities.</p>
+                    </div>
+                </div>
+                <div class="card-actions-group">
+                    <a href="Official, inquiry , complaint.html" class="card-btn" onclick="playClickSound()">
+                        <span>Open Editor</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button class="preview-btn" onclick="openPreview('Official & Inquiry Letter', 'Tailored for addressing municipal officers regarding irregular water supply, electricity breakdowns, or damaged street lights.')"><i class="fa-solid fa-eye"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- PREVIEW MODAL POPUP -->
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="modalTitle"><i class="fa-solid fa-file-lines"></i> Template Preview</h3>
+                <button class="close-modal" onclick="closePreview()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p id="modalDesc">Description goes here...</p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="card-btn" onclick="alert('Template details copied to clipboard!')"><i class="fa-solid fa-copy"></i> Copy Details</button>
+                <button class="preview-btn" style="flex:1;" onclick="closePreview()">Close</button>
+            </div>
+        </div>
+    </div>
+
+<div class="h-full bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    
+    <!-- Floating Trigger Button -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button id="openAIModalBtn" class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-violet-600 via-indigo-600 to-fuchsia-500 text-white shadow-[0_10px_25px_-5px_rgba(99,102,241,0.5)] hover:shadow-[0_15px_35px_-5px_rgba(168,85,247,0.6)] hover:scale-110 active:scale-95 transition-all duration-300 backdrop-blur-sm">
+        
+        <!-- Outer Glow Effect -->
+        <span class="absolute -inset-0.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 opacity-75 blur group-hover:opacity-100 transition duration-300 -z-10 animate-pulse"></span>
+        
+        <!-- Live Status Pulse Dot -->
+        <span class="absolute top-1 right-1 flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-fuchsia-300 border-2 border-slate-900"></span>
+        </span>
+        
+        <!-- Magic Wand Icon -->
+        <i class="fa-solid fa-wand-magic-sparkles text-xl group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300"></i>
+
+        <!-- Tooltip on Hover -->
+        <span class="absolute right-16 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none whitespace-nowrap rounded-md bg-slate-900/90 backdrop-blur-md px-3 py-1.5 text-xs font-medium text-white shadow-xl border border-slate-700/50">
+            AI Letter Generator
+        </span>
+    </button>
+</div>
+
+
+    <!-- Modal Container -->
+    <div id="aiModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300">
+        <div class="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] transform scale-95 transition-all duration-300" id="modalContent">
+            
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-6 py-5 border-b border-slate-100 bg-gradient-to-r from-slate-50 to-indigo-50/50">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg shadow-indigo-600/20">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold text-slate-900">अल्टीमेट AI लेटर एवं बायो-डाटा क्रिएटर</h2>
+                        <p class="text-xs text-slate-500">सभी भाषाओं, फोंट्स और कस्टम विकल्पों के साथ पत्र तैयार करें</p>
+                    </div>
+                </div>
+                <button id="closeAIModalBtn" class="w-9 h-9 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-700 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="flex-1 overflow-y-auto p-6 space-y-5">
+                
+                <!-- Input Configuration Form -->
+                <div id="generatorForm" class="space-y-4">
+                    
+                    <!-- Row 1: Letter Type & Custom Type Input -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-indigo-50/60 border border-indigo-100 rounded-2xl p-4 space-y-3">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-indigo-900">
+                                <i class="fa-solid fa-file-lines text-indigo-600 mr-1.5"></i> 1. पत्र का प्रकार चुनें और विवरण भरें (Select Letter Type)
+                            </label>
+                            <div class="flex flex-col sm:flex-row items-center gap-3">
+                                <select id="letterTypeSelect" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                                    <option value="business">1. बिजनेस लेटर (Business Letter)</option>
+                                    <option value="job">2. नौकरी हेतु आवेदन + बायो-डाटा (Job Application with Bio-data)</option>
+                                    <option value="editor">3. लेटर टू एडिटर (Letter to Editor)</option>
+                                    <option value="official">4. ऑफिशियल, इंक्वायरी, कम्प्लेंट (Official, Inquiry, Complaint)</option>
+                                    <option value="leave">5. अवकाश आवेदन (Leave Application)</option>
+                                    <option value="sick">6. बीमारी की छुट्टी (Sick Leave)</option>
+                                    <option value="permission">7. अनुमति पत्र (Permission Letter)</option>
+                                    <option value="fee">8. फीस माफी हेतु आवेदन (Fee Concession)</option>
+                                    <option value="congrats">9. बधाई पत्र (Congratulatory Letter)</option>
+                                    <option value="custom" selected>10. अन्य अपनी मर्जी का (Other Custom Letter)</option>
+                                </select>
+                                <button type="button" id="openTypeInputsBtn" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md shadow-indigo-600/20 whitespace-nowrap transition-all">
+                                    <i class="fa-solid fa-pen-to-square"></i><span>डेटा इनपुट भरें (Fill Data)</span>
+                                </button>
+                            </div>
+                            <p id="selectedDataStatus" class="text-[11px] text-emerald-600 font-medium hidden">
+                                <i class="fa-solid fa-circle-check"></i> डेटा सफलतापूर्वक सहेज लिया गया है।
+                            </p>
+                        </div>
+
+                        <div id="customTypeWrapper" class="hidden">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-pen text-indigo-600 mr-1.5"></i> यहाँ अपना विषय लिखें
+                            </label>
+                            <input type="text" id="customTypeInput" placeholder="जैसे: स्कूल ट्रांसफर, लोन के लिए..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-language text-indigo-600 mr-1.5"></i> भाषा चुनें (Language)
+                            </label>
+                            <select id="letterLanguage" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all max-h-40">
+                                <option value="Hindi" selected>Hindi (हिंदी)</option>
+                                <option value="English">English</option>
+                                <option value="Hinglish">Hinglish</option>
+                                <option value="Acehnese">Acehnese</option><option value="Acholi">Acholi</option><option value="Afar">Afar</option><option value="Afrikaans">Afrikaans</option><option value="Albanian">Albanian</option><option value="Alur">Alur</option><option value="Amharic">Amharic</option><option value="Arabic">Arabic</option><option value="Armenian">Armenian</option><option value="Assamese">Assamese</option><option value="Avar">Avar</option><option value="Awadhi">Awadhi</option><option value="Aymara">Aymara</option><option value="Azerbaijani">Azerbaijani</option><option value="Balinese">Balinese</option><option value="Balochi">Balochi</option><option value="Bambara">Bambara</option><option value="Baoule">Baoule</option><option value="Bashkir">Bashkir</option><option value="Basque">Basque</option><option value="Batak Karo">Batak Karo</option><option value="Batak Simalungun">Batak Simalungun</option><option value="Batak Toba">Batak Toba</option><option value="Belarusian">Belarusian</option><option value="Bemba">Bemba</option><option value="Bengali">Bengali</option><option value="Betawi">Betawi</option><option value="Bhojpuri">Bhojpuri</option><option value="Bikol">Bikol</option><option value="Bosnian">Bosnian</option><option value="Breton">Breton</option><option value="Bulgarian">Bulgarian</option><option value="Buryat">Buryat</option><option value="Cantonese">Cantonese</option><option value="Catalan">Catalan</option><option value="Cebuano">Cebuano</option><option value="Chamorro">Chamorro</option><option value="Chechen">Chechen</option><option value="Chichewa">Chichewa</option><option value="Chinese (Simplified)">Chinese (Simplified)</option><option value="Chinese (Traditional)">Chinese (Traditional)</option><option value="Chuukese">Chuukese</option><option value="Chuvash">Chuvash</option><option value="Corsican">Corsican</option><option value="Crimean Tatar">Crimean Tatar</option><option value="Croatian">Croatian</option><option value="Czech">Czech</option><option value="Danish">Danish</option><option value="Dari">Dari</option><option value="Dinka">Dinka</option><option value="Divehi">Divehi</option><option value="Dogri">Dogri</option><option value="Domari">Domari</option><option value="Dyula">Dyula</option><option value="Dzongkha">Dzongkha</option><option value="Esperanto">Esperanto</option><option value="Estonian">Estonian</option><option value="Ewe">Ewe</option><option value="Faroese">Faroese</option><option value="Fijian">Fijian</option><option value="Filipino (Tagalog)">Filipino (Tagalog)</option><option value="Finnish">Finnish</option><option value="Fon">Fon</option><option value="French">French</option><option value="Frisian">Frisian</option><option value="Friulian">Friulian</option><option value="Fulani">Fulani</option><option value="Ga">Ga</option><option value="Galician">Galician</option><option value="Georgian">Georgian</option><option value="German">German</option><option value="Gilaki">Gilaki</option><option value="Greek">Greek</option><option value="Guarani">Guarani</option><option value="Gujarati">Gujarati</option><option value="Haitian Creole">Haitian Creole</option><option value="Hakha Chin">Hakha Chin</option><option value="Hausa">Hausa</option><option value="Hawaiian">Hawaiian</option><option value="Hebrew">Hebrew</option><option value="Hiligaynon">Hiligaynon</option><option value="Hmong">Hmong</option><option value="Hungarian">Hungarian</option><option value="Hunsrik">Hunsrik</option><option value="Iban">Iban</option><option value="Icelandic">Icelandic</option><option value="Igbo">Igbo</option><option value="Iloko">Iloko</option><option value="Indonesian">Indonesian</option><option value="Irish">Irish</option><option value="Italian">Italian</option><option value="Jamaican Patois">Jamaican Patois</option><option value="Japanese">Japanese</option><option value="Javanese">Javanese</option><option value="Jingpo">Jingpo</option><option value="Kalaallisut">Kalaallisut</option><option value="Kannada">Kannada</option><option value="Kanuri">Kanuri</option><option value="Kapampangan">Kapampangan</option><option value="Kazakh">Kazakh</option><option value="Khasi">Khasi</option><option value="Khmer">Khmer</option><option value="Kiga">Kiga</option><option value="Kikongo">Kikongo</option><option value="Kinyarwanda">Kinyarwanda</option><option value="Kituba">Kituba</option><option value="Kokborok">Kokborok</option><option value="Komi">Komi</option><option value="Konkani">Konkani</option><option value="Korean">Korean</option><option value="Krio">Krio</option><option value="Kurdish (Kurmanji)">Kurdish (Kurmanji)</option><option value="Kurdish (Sorani)">Kurdish (Sorani)</option><option value="Kyrgyz">Kyrgyz</option><option value="Lao">Lao</option><option value="Latgalian">Latgalian</option><option value="Latin">Latin</option><option value="Latvian">Latvian</option><option value="Ligurian">Ligurian</option><option value="Limburgish">Limburgish</option><option value="Lingala">Lingala</option><option value="Lithuanian">Lithuanian</option><option value="Lombard">Lombard</option><option value="Luganda">Luganda</option><option value="Luo">Luo</option><option value="Luxembourgish">Luxembourgish</option><option value="Macedonian">Macedonian</option><option value="Madurese">Madurese</option><option value="Maithili">Maithili</option><option value="Makassarese">Makassarese</option><option value="Malagasy">Malagasy</option><option value="Malay">Malay</option><option value="Malay (Jawi)">Malay (Jawi)</option><option value="Malayalam">Malayalam</option><option value="Maltese">Maltese</option><option value="Mam">Mam</option><option value="Manx">Manx</option><option value="Maori">Maori</option><option value="Marathi">Marathi</option><option value="Marshallese">Marshallese</option><option value="Marwadi">Marwadi</option><option value="Mauritian Creole">Mauritian Creole</option><option value="Meadow Mari">Meadow Mari</option><option value="Meiteilon (Manipuri)">Meiteilon (Manipuri)</option><option value="Minangkabau">Minangkabau</option><option value="Mizo">Mizo</option><option value="Mongolian">Mongolian</option><option value="Myanmar (Burmese)">Myanmar (Burmese)</option><option value="Nahuatl (Eastern Huasteca)">Nahuatl (Eastern Huasteca)</option><option value="Ndau">Ndau</option><option value="Ndebele (South)">Ndebele (South)</option><option value="Nepalese">Nepalese</option><option value="NKo">NKo</option><option value="Norwegian">Norwegian</option><option value="Nuer">Nuer</option><option value="Occitan">Occitan</option><option value="Odia (Oriya)">Odia (Oriya)</option><option value="Oromo">Oromo</option><option value="Ossetian">Ossetian</option><option value="Pangasinan">Pangasinan</option><option value="Papiamento">Papiamento</option><option value="Pashto">Pashto</option><option value="Persian">Persian</option><option value="Polish">Polish</option><option value="Portuguese (Brazil)">Portuguese (Brazil)</option><option value="Portuguese (Portugal)">Portuguese (Portugal)</option><option value="Punjabi (Gurmukhi)">Punjabi (Gurmukhi)</option><option value="Punjabi (Shahmukhi)">Punjabi (Shahmukhi)</option><option value="Quechua">Quechua</option><option value="Q’eqchi’">Q’eqchi’</option><option value="Romani">Romani</option><option value="Romanian">Romanian</option><option value="Rundi">Rundi</option><option value="Russian">Russian</option><option value="Sami (North)">Sami (North)</option><option value="Samoan">Samoan</option><option value="Sango">Sango</option><option value="Sanskrit">Sanskrit</option><option value="Santali">Santali</option><option value="Scots Gaelic">Scots Gaelic</option><option value="Sepedi">Sepedi</option><option value="Serbian">Serbian</option><option value="Sesotho">Sesotho</option><option value="Seychellois Creole">Seychellois Creole</option><option value="Shan">Shan</option><option value="Shona">Shona</option><option value="Sicilian">Sicilian</option><option value="Silesian">Silesian</option><option value="Sindhi">Sindhi</option><option value="Sinhala">Sinhala</option><option value="Slovak">Slovak</option><option value="Slovenian">Slovenian</option><option value="Somali">Somali</option><option value="Sotho">Sotho</option><option value="Spanish">Spanish</option><option value="Sundanese">Sundanese</option><option value="Susu">Susu</option><option value="Swahili">Swahili</option><option value="Swati">Swati</option><option value="Swedish">Swedish</option><option value="Tahitian">Tahitian</option><option value="Tajik">Tajik</option><option value="Tamazight">Tamazight</option><option value="Tamazight (Tifinagh)">Tamazight (Tifinagh)</option><option value="Tamil">Tamil</option><option value="Tatar">Tatar</option><option value="Telugu">Telugu</option><option value="Tetum">Tetum</option><option value="Thai">Thai</option><option value="Tibetan">Tibetan</option><option value="Tigrinya">Tigrinya</option><option value="Tiv">Tiv</option><option value="Tok Pisin">Tok Pisin</option><option value="Tongan">Tongan</option><option value="Tsonga">Tsonga</option><option value="Tswana">Tswana</option><option value="Tulu">Tulu</option><option value="Tumbuka">Tumbuka</option><option value="Turkish">Turkish</option><option value="Turkmen">Turkmen</option><option value="Twi">Twi</option><option value="Udmurt">Udmurt</option><option value="Ukrainian">Ukrainian</option><option value="Urdu">Urdu</option><option value="Uyghur">Uyghur</option><option value="Uzbek">Uzbek</option><option value="Venda">Venda</option><option value="Venetian">Venetian</option><option value="Vietnamese">Vietnamese</option><option value="Waray">Waray</option><option value="Welsh">Welsh</option><option value="Wolof">Wolof</option><option value="Xhosa">Xhosa</option><option value="Yakut">Yakut</option><option value="Yiddish">Yiddish</option><option value="Yoruba">Yoruba</option><option value="Yucatec Maya">Yucatec Maya</option><option value="Zapotec">Zapotec</option><option value="Zulu">Zulu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Font Selection & Writing Style -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-font text-indigo-600 mr-1.5"></i> फ़ॉन्ट स्टाइल चुनें (Font Style)
+                            </label>
+                            
+                            <!-- Hidden Input: जो चुना हुआ फ़ॉन्ट AI जनरेटर को भेजेगा -->
+                            <input type="hidden" id="letterFont" value="Plus Jakarta Sans">
+                            
+                            <!-- Custom Dropdown Wrapper -->
+                            <div class="relative w-full">
+                                <!-- Trigger Box (जो बाहर दिखता है) -->
+                                <button type="button" id="customFontTrigger" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                                    <span id="selectedFontLabel" style="font-family: 'Plus Jakarta Sans', sans-serif;">Plus Jakarta Sans (डिफ़ॉल्ट)</span>
+                                    <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+                                </button>
+                                
+                                <!-- Custom Options List Dropdown (जो क्लिक करने पर खुलेगा) -->
+                                <div id="customFontOptions" class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-slate-200 rounded-2xl shadow-2xl z-50 max-h-60 overflow-y-auto p-2 space-y-1">
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Plus Jakarta Sans', sans-serif" style="font-family: 'Plus Jakarta Sans', sans-serif;">Plus Jakarta Sans (डिफ़ॉल्ट)</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Amatic SC', cursive" style="font-family: 'Amatic SC', cursive;">Amatic SC</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Arial</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Baskerville, serif" style="font-family: Baskerville, serif;">Baskerville</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Bodoni MT', Didot, serif" style="font-family: 'Bodoni MT', Didot, serif;">Bodoni</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Book Antiqua', Palatino, serif" style="font-family: 'Book Antiqua', Palatino, serif;">Book Antiqua</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Brush Script MT', cursive" style="font-family: 'Brush Script MT', cursive;">Brush Script MT</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Calibri, sans-serif" style="font-family: Calibri, sans-serif;">Calibri</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Cambria, serif" style="font-family: Cambria, serif;">Cambria</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Caveat', cursive" style="font-family: 'Caveat', cursive;">Caveat</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Century Schoolbook', serif" style="font-family: 'Century Schoolbook', serif;">Century Schoolbook</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Comic Neue', cursive" style="font-family: 'Comic Neue', cursive;">Comic Neue</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Comic Sans MS', cursive" style="font-family: 'Comic Sans MS', cursive;">Comic Sans MS</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Comfortaa', cursive" style="font-family: 'Comfortaa', cursive;">Comfortaa</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Consolas, monospace" style="font-family: Consolas, monospace;">Consolas</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Cooper Black', serif" style="font-family: 'Cooper Black', serif;">Cooper Black</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Courier, monospace" style="font-family: Courier, monospace;">Courier</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Courier New</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Courier Prime', monospace" style="font-family: 'Courier Prime', monospace;">Courier Prime</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Crimson Text', serif" style="font-family: 'Crimson Text', serif;">Crimson Text</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Dancing Script', cursive" style="font-family: 'Dancing Script', cursive;">Dancing Script</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Didot, serif" style="font-family: Didot, serif;">Didot</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'EB Garamond', serif" style="font-family: 'EB Garamond', serif;">EB Garamond</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Fira Code', monospace" style="font-family: 'Fira Code', monospace;">Fira Code</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Futura, sans-serif" style="font-family: Futura, sans-serif;">Futura</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Garamond, serif" style="font-family: Garamond, serif;">Garamond</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Georgia, serif" style="font-family: Georgia, serif;">Georgia</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Gill Sans', sans-serif" style="font-family: 'Gill Sans', sans-serif;">Gill Sans</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Great Vibes', cursive" style="font-family: 'Great Vibes', cursive;">Great Vibes</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Helvetica, sans-serif" style="font-family: Helvetica, sans-serif;">Helvetica</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Impact, fantasy" style="font-family: Impact, fantasy;">Impact</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Inconsolata', monospace" style="font-family: 'Inconsolata', monospace;">Inconsolata</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Inter', sans-serif" style="font-family: 'Inter', sans-serif;">Inter</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'JetBrains Mono', monospace" style="font-family: 'JetBrains Mono', monospace;">JetBrains Mono</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Lato', sans-serif" style="font-family: 'Lato', sans-serif;">Lato</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Lexend', sans-serif" style="font-family: 'Lexend', sans-serif;">Lexend</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Lobster', cursive" style="font-family: 'Lobster', cursive;">Lobster</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Lora', serif" style="font-family: 'Lora', serif;">Lora</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Lucida Console', monospace" style="font-family: 'Lucida Console', monospace;">Lucida Console</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Lucida Handwriting', cursive" style="font-family: 'Lucida Handwriting', cursive;">Lucida Handwriting</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Merriweather', serif" style="font-family: 'Merriweather', serif;">Merriweather</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Minion Pro', serif" style="font-family: 'Minion Pro', serif;">Minion Pro</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Monaco, monospace" style="font-family: Monaco, monospace;">Monaco</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Montserrat', sans-serif" style="font-family: 'Montserrat', sans-serif;">Montserrat</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Nunito', sans-serif" style="font-family: 'Nunito', sans-serif;">Nunito</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Open Sans', sans-serif" style="font-family: 'Open Sans', sans-serif;">Open Sans</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Oswald', sans-serif" style="font-family: 'Oswald', sans-serif;">Oswald</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Pacifico', cursive" style="font-family: 'Pacifico', cursive;">Pacifico</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Palatino, serif" style="font-family: Palatino, serif;">Palatino</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Papyrus, fantasy" style="font-family: Papyrus, fantasy;">Papyrus</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Playfair Display', serif" style="font-family: 'Playfair Display', serif;">Playfair Display</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Poppins', sans-serif" style="font-family: 'Poppins', sans-serif;">Poppins</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Roboto', sans-serif" style="font-family: 'Roboto', sans-serif;">Roboto</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Rockwell, serif" style="font-family: Rockwell, serif;">Rockwell</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Segoe UI', sans-serif" style="font-family: 'Segoe UI', sans-serif;">Segoe UI</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Source Code Pro', monospace" style="font-family: 'Source Code Pro', monospace;">Source Code Pro</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Space Mono', monospace" style="font-family: 'Space Mono', monospace;">Space Mono</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Spectral', serif" style="font-family: 'Spectral', serif;">Spectral</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Tahoma, sans-serif" style="font-family: Tahoma, sans-serif;">Tahoma</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Times New Roman', serif" style="font-family: 'Times New Roman', serif;">Times New Roman</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Trebuchet MS', sans-serif" style="font-family: 'Trebuchet MS', sans-serif;">Trebuchet MS</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Verdana, sans-serif" style="font-family: Verdana, sans-serif;">Verdana</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Anton, sans-serif" style="font-family: Anton, sans-serif;">Anton</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Bangers', cursive" style="font-family: 'Bangers', cursive;">Bangers</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Cairo', sans-serif" style="font-family: 'Cairo', sans-serif;">Cairo</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Cinzel', serif" style="font-family: 'Cinzel', serif;">Cinzel</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Cookie, cursive" style="font-family: Cookie, cursive;">Cookie</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Courgette, cursive" style="font-family: Courgette, cursive;">Courgette</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'DM Sans', sans-serif" style="font-family: 'DM Sans', sans-serif;">DM Sans</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Exo 2', sans-serif" style="font-family: 'Exo 2', sans-serif;">Exo 2</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Josefin Sans', sans-serif" style="font-family: 'Josefin Sans', sans-serif;">Josefin Sans</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Kanit, sans-serif" style="font-family: Kanit, sans-serif;">Kanit</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Monoton, cursive" style="font-family: Monoton, cursive;">Monoton</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Mukta, sans-serif" style="font-family: Mukta, sans-serif;">Mukta</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Orbitron', sans-serif" style="font-family: 'Orbitron', sans-serif;">Orbitron</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Oleo Script', cursive" style="font-family: 'Oleo Script', cursive;">Oleo Script</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Parisienne, cursive" style="font-family: Parisienne, cursive;">Parisienne</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Permanent Marker', cursive" style="font-family: 'Permanent Marker', cursive;">Permanent Marker</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Philosopher, sans-serif" style="font-family: Philosopher, sans-serif;">Philosopher</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Quicksand', sans-serif" style="font-family: 'Quicksand', sans-serif;">Quicksand</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Righteous, cursive" style="font-family: Righteous, cursive;">Righteous</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Sacramento', cursive" style="font-family: 'Sacramento', cursive;">Sacramento</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Satisfy', cursive" style="font-family: 'Satisfy', cursive;">Satisfy</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Teko', sans-serif" style="font-family: 'Teko', sans-serif;">Teko</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Ubuntu', sans-serif" style="font-family: 'Ubuntu', sans-serif;">Ubuntu</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Varela Round', sans-serif" style="font-family: 'Varela Round', sans-serif;">Varela Round</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Yanone Kaffeesatz', sans-serif" style="font-family: 'Yanone Kaffeesatz', sans-serif;">Yanone Kaffeesatz</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Aleo, serif" style="font-family: Aleo, serif;">Aleo</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Barlow, sans-serif" style="font-family: Barlow, sans-serif;">Barlow</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Chivo, sans-serif" style="font-family: Chivo, sans-serif;">Chivo</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Epilogue, sans-serif" style="font-family: Epilogue, sans-serif;">Epilogue</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Heebo, sans-serif" style="font-family: Heebo, sans-serif;">Heebo</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Karla, sans-serif" style="font-family: Karla, sans-serif;">Karla</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Manrope, sans-serif" style="font-family: Manrope, sans-serif;">Manrope</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Mulish, sans-serif" style="font-family: Mulish, sans-serif;">Mulish</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Overpass, sans-serif" style="font-family: Overpass, sans-serif;">Overpass</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="Prompt, sans-serif" style="font-family: Prompt, sans-serif;">Prompt</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Readex Pro', sans-serif" style="font-family: 'Readex Pro', sans-serif;">Readex Pro</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Red Hat Display', sans-serif" style="font-family: 'Red Hat Display', sans-serif;">Red Hat Display</div>
+                                    <div class="font-item p-2.5 rounded-xl hover:bg-indigo-50 cursor-pointer text-base transition-colors" data-value="'Work Sans', sans-serif" style="font-family: 'Work Sans', sans-serif;">Work Sans</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-feather text-indigo-600 mr-1.5"></i> लेखन शैली (Writing Tone)
+                            </label>
+                            <select id="writingStyle" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                                <option value="Formal & Professional">औपचारिक एवं व्यावसायिक (Formal & Professional)</option>
+                                <option value="Very Polite & Respectful">अत्यधिक विनम्र एवं आदरणीय (Respectful)</option>
+                                <option value="Emotional & Convincing">भावुक एवं असरदार (Emotional & Convincing)</option>
+                                <option value="Strict & Direct">कड़ा एवं सीधा (Strict & Direct)</option>
+                                <option value="Casual & Friendly">मित्रवत / सामान्य (Friendly)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Sender & Receiver Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-user text-indigo-600 mr-1.5"></i> भेजने वाले का नाम (आपका नाम)
+                            </label>
+                            <input type="text" id="senderName" placeholder="जैसे: कुलदीप..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-building-user text-indigo-600 mr-1.5"></i> किसके नाम पत्र है (प्राप्तकर्ता)
+                            </label>
+                            <input type="text" id="receiverName" placeholder="जैसे: प्रधानाचार्य महोदय..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Word Length & Custom Word Input -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-text-height text-indigo-600 mr-1.5"></i> शब्दों की संख्या (Length)
+                            </label>
+                            <select id="letterLength" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                                <option value="Short (~100 words)">छोटा (~100 शब्द)</option>
+                                <option value="Medium (~250 words)" selected>मध्यम (~250 शब्द)</option>
+                                <option value="Detailed (~500 words)">विस्तृत (~500 शब्द)</option>
+                                <option value="customWords">अपनी मर्जी के शब्द लिखें (Custom Words)</option>
+                            </select>
+                        </div>
+                        <div id="customWordsWrapper" class="hidden">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                                <i class="fa-solid fa-calculator text-indigo-600 mr-1.5"></i> शब्दों की सटीक संख्या लिखें
+                            </label>
+                            <input type="text" id="customWordsInput" placeholder="जैसे: 150 शब्द या 400 शब्द..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all">
+                        </div>
+                    </div>
+
+                    <!-- Special Formatting Checklist -->
+                    <div class="bg-indigo-50/40 border border-indigo-100 rounded-2xl p-4 space-y-2">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-indigo-900 mb-1">
+                            <i class="fa-solid fa-sliders text-indigo-600 mr-1"></i> विशेष आवश्यकताएं (Special Formatting & Add-ons)
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="includeBiodata" class="rounded text-indigo-600 focus:ring-indigo-500 w-4 h-4">
+                                <span>साथ में बायो-डाटा / रिज्यूमे (Bio-data/Resume) जोड़ें</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="includeBold" class="rounded text-indigo-600 focus:ring-indigo-500 w-4 h-4">
+                                <span>मुख्य शब्दों को **बोल्ड (Bold)** करें</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="includePoints" class="rounded text-indigo-600 focus:ring-indigo-500 w-4 h-4">
+                                <span>कारणों को पॉइंट्स (Bullet Points) में लिखें</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="includeSubjectLine" checked class="rounded text-indigo-600 focus:ring-indigo-500 w-4 h-4">
+                                <span>विषय (Subject) और दिनांक अनिवार्य रूप से रखें</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Custom Prompt Details -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                            <i class="fa-solid fa-circle-info text-indigo-600 mr-1.5"></i> अपनी तरफ से कोई खास निर्देश या पूरी कहानी (Custom Instructions)
+                        </label>
+                        <textarea id="customPrompt" rows="3" placeholder="यहाँ अपनी मर्जी की कोई भी बात लिखिए (जैसे: मुझे दो दिनों की छुट्टी चाहिए क्योंकि बुखार है...)" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all resize-none"></textarea>
+                    </div>
+
+                    <!-- API Key Accordion -->
+                    <div class="pt-1 border-t border-slate-100">
+                        <div class="flex items-center justify-between mb-1">
+                            <button type="button" id="toggleApiKeyConfig" class="text-xs font-medium text-indigo-600 hover:text-indigo-800 flex items-center gap-1.5">
+                                <i class="fa-solid fa-key"></i> <span>API Key सेटिंग्स दिखाएं</span>
+                            </button>
+                        </div>
+                        <div id="apiKeySection" class="hidden space-y-1.5">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600">Google Gemini API Key</label>
+                            <input type="password" id="apiKeyInput" value="" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-xs font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600">
+                        </div>
+                    </div>
+
+                    <!-- Generate Button -->
+                    <button id="generateBtn" class="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold py-3.5 rounded-xl shadow-lg shadow-indigo-600/20 flex items-center justify-center gap-2 transition-all active:scale-[0.99]">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>लेटर जनरेट करें (Generate Letter)</span>
+                    </button>
+                </div>
+                
+                <!-- DYNAMIC SUB-PANEL FOR SPECIFIC LETTER INPUTS -->
+                <div id="dynamicInputPanel" class="hidden space-y-5 bg-slate-900 text-white p-6 rounded-3xl shadow-2xl">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                        <div>
+                            <h3 id="panelTitle" class="text-base font-bold text-amber-400">विशेष डेटा इनपुट पैनल</h3>
+                            <p class="text-xs text-slate-400">नीचे दिए गए बॉक्स में अपने पत्र के अनुसार सटीक जानकारी भरें</p>
+                        </div>
+                        <button type="button" id="closeSubPanelBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <!-- Dynamic form fields container -->
+                    <div id="subPanelFieldsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+
+                    <!-- Action buttons inside subpanel -->
+                    <div class="flex items-center justify-end gap-3 pt-3 border-t border-slate-800">
+                        <button type="button" id="clearSubPanelBtn" class="bg-rose-950/80 hover:bg-rose-900 text-rose-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition-all">
+                            <i class="fa-solid fa-trash mr-1"></i> इनपुट खाली करें
+                        </button>
+                        <button type="button" id="saveSubPanelBtn" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                            <i class="fa-solid fa-check mr-1"></i> ओके / सेव करें (Save & Return)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loading State Box -->
+                <div id="loadingBox" class="hidden flex-col items-center justify-center py-12 space-y-4">
+                    <div class="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
+                    <p class="text-sm font-medium text-slate-600 animate-pulse">AI आपकी भाषा और फोंट स्टाइल के अनुसार पत्र तैयार कर रहा है...</p>
+                </div>
+
+                <!-- Result Box -->
+                <div id="resultBox" class="hidden space-y-4">
+                    <div class="flex items-center justify-between bg-slate-100 px-4 py-2.5 rounded-xl">
+                        <span class="text-xs font-bold text-slate-700 uppercase tracking-wide flex items-center gap-2">
+                            <i class="fa-solid fa-file-circle-check text-emerald-600"></i> तैयार पत्र (Generated Output)
+                        </span>
+                        <div class="flex items-center gap-2 flex-wrap justify-end">
+                            <button id="copyBtn" class="bg-white hover:bg-slate-50 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm flex items-center gap-1.5 transition-all">
+                                <i class="fa-regular fa-copy"></i> कॉपी करें
+                            </button>
+                            <button id="downloadBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-1.5 transition-all">
+                                <i class="fa-solid fa-download"></i> डाउनलोड TXT
+                            </button>
+
+                            <button id="fullScreenBtn" class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-medium px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-1.5 transition-all">
+                                <i class="fa-solid fa-expand"></i> फुल स्क्रीन देखें
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Output Text Box with Dynamic Selected Font -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-800 whitespace-normal leading-normal max-h-[380px] overflow-y-auto shadow-inner" id="letterOutputText" style="line-height: 1.4; word-spacing: 0px;"></div>
+
+                    <button id="backToFormBtn" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-3 rounded-xl text-xs transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-rotate-left"></i> नया पत्र बनाएं (Create Another)
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-center">
+                <p class="text-[11px] text-slate-400">Powered by Google Gemini AI &bull; All Languages & Fonts Supported</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Full Screen Letter Modal (अब स्क्रिप्ट के ऊपर सही जगह पर है) -->
+    <div id="fullScreenModal" class="fixed inset-0 z-[100] flex flex-col bg-white hidden p-4 sm:p-8 overflow-y-auto">
+        <!-- Top Action Bar -->
+        <div class="flex items-center justify-between border-b pb-4 mb-4">
+            <h2 class="text-base font-bold text-slate-800"><i class="fa-solid fa-file-lines text-indigo-600 mr-2"></i>फुल स्क्रीन लेटर व्यू</h2>
+            <div class="flex items-center gap-3">
+                <button id="modalPrintPdfBtn" class="bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold px-4 py-2 rounded-xl shadow flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> PDF डाउनलोड / प्रिंट करें
+                </button>
+                <button id="closeFullScreenBtn" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Full Screen Content Area -->
+        <div id="fullScreenContent" class="flex-1 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-10 text-slate-900 shadow-inner overflow-y-auto">
+            <!-- Generated letter will appear here in full screen -->
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl text-xs font-medium opacity-0 pointer-events-none transition-all duration-300 transform translate-y-4 flex items-center gap-2">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastMessage">सफलतापूर्वक कॉपी हो गया!</span>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed & Developed with ❤️ by Kuldeep | <span>CBSE Master Hub 2026</span></p>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 1. Live Time Clock Feature
+        function updateLiveClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            const formattedHours = String(hours).padStart(2, '0');
+            
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            const dateStr = now.toLocaleDateString('en-GB', options);
+            
+            const timeString = `${dateStr} | ${formattedHours}:${minutes}:${seconds} ${ampm}`;
+            const clockEl = document.getElementById('clockTime');
+            if(clockEl) {
+                clockEl.innerText = timeString;
+            }
+        }
+        setInterval(updateLiveClock, 1000);
+        updateLiveClock();
+
+        // 2. Theme Switcher
+        function changeTheme(themeName) {
+            document.documentElement.setAttribute('data-theme', themeName);
+            localStorage.setItem('portal_theme', themeName);
+            playClickSound();
+        }
+
+        // 3. Sound Toggle & Audio Beep
+        let soundEnabled = true;
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const icon = document.getElementById('soundIcon');
+            icon.className = soundEnabled ? "fa-solid fa-volume-high" : "fa-solid fa-volume-xmark";
+        }
+
+        function playClickSound() {
+            if (!soundEnabled) return;
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(650, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.08);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.08);
+            } catch(e) {}
+        }
+
+        // 4. Init Memory & Counter
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('portal_theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                document.getElementById('themeSwitcher').value = savedTheme;
+            }
+            
+            let visits = parseInt(localStorage.getItem('portal_visits') || 4280) + 1;
+            localStorage.setItem('portal_visits', visits);
+            document.getElementById('visitCount').innerText = visits.toLocaleString() + '+';
+        };
+
+        // 5. Category Filter Chips
+        function filterCategory(category, btn) {
+            document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('.letter-card');
+            cards.forEach(card => {
+                const categories = card.getAttribute('data-category');
+                const isBookmarked = card.querySelector('.bookmark-btn').classList.contains('bookmarked');
+
+                if (category === 'all') {
+                    card.style.display = "flex";
+                } else if (category === 'saved') {
+                    card.style.display = isBookmarked ? "flex" : "none";
+                } else {
+                    card.style.display = categories.includes(category) ? "flex" : "none";
+                }
+            });
+            playClickSound();
+        }
+
+        // 6. Bookmark Toggle
+        function toggleBookmark(btn, title) {
+            btn.classList.toggle('bookmarked');
+            playClickSound();
+        }
+
+        // 7. Search Filter
+        function filterCards() {
+            const rawInput = document.getElementById('searchInput').value.trim().toLowerCase();
+            const cards = document.querySelectorAll('.letter-card');
+
+            if (rawInput === "") {
+                cards.forEach(card => card.style.display = "flex");
+                return;
+            }
+
+            const queryTokens = rawInput.split(/\s+/);
+            cards.forEach(card => {
+                const keywords = card.getAttribute('data-title').toLowerCase();
+                const cardContent = card.innerText.toLowerCase();
+                const fullSearchableText = keywords + " " + cardContent;
+                let isMatch = queryTokens.every(token => fullSearchableText.includes(token));
+                card.style.display = isMatch ? "flex" : "none";
+            });
+        }
+
+        // 8. Voice Search
+        function startVoiceSearch() {
+            if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+                alert('Speech recognition is not supported in your browser.');
+                return;
+            }
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+            recognition.lang = 'en-US';
+            
+            recognition.onstart = function() {
+                document.getElementById('searchInput').placeholder = "Listening...";
+            };
+            
+            recognition.onresult = function(event) {
+                const speechResult = event.results[0][0].transcript;
+                document.getElementById('searchInput').value = speechResult;
+                filterCards();
+            };
+            
+            recognition.onend = function() {
+                document.getElementById('searchInput').placeholder = "Search letters (e.g., Business, Job, Editor, Complaint)...";
+            };
+            
+            recognition.start();
+        }
+
+        // 9. Modals
+        function openPreview(title, desc) {
+            document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-file-lines"></i> ${title}`;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('previewModal').classList.add('active');
+            playClickSound();
+        }
+
+        function closePreview() {
+            document.getElementById('previewModal').classList.remove('active');
+            playClickSound();
+        }
+
+        function openAiModal() {
+            document.getElementById('aiModal').classList.add('active');
+            playClickSound();
+        }
+
+        function closeAiModal() {
+            document.getElementById('aiModal').classList.remove('active');
+            playClickSound();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const openBtn = document.getElementById('openAIModalBtn');
+            const closeBtn = document.getElementById('closeAIModalBtn');
+            const modal = document.getElementById('aiModal');
+            const modalContent = document.getElementById('modalContent');
+            const toggleApiKeyBtn = document.getElementById('toggleApiKeyConfig');
+            const apiKeySection = document.getElementById('apiKeySection');
+            const generateBtn = document.getElementById('generateBtn');
+            const generatorForm = document.getElementById('generatorForm');
+            const loadingBox = document.getElementById('loadingBox');
+            const resultBox = document.getElementById('resultBox');
+            const letterOutputText = document.getElementById('letterOutputText');
+            const copyBtn = document.getElementById('copyBtn');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const backToFormBtn = document.getElementById('backToFormBtn');
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+
+            const letterTypeSelect = document.getElementById('letterTypeSelect');
+            const customTypeWrapper = document.getElementById('customTypeWrapper');
+            const customTypeInput = document.getElementById('customTypeInput');
+
+            const openTypeInputsBtn = document.getElementById('openTypeInputsBtn');
+            const dynamicInputPanel = document.getElementById('dynamicInputPanel');
+            const closeSubPanelBtn = document.getElementById('closeSubPanelBtn');
+            const subPanelFieldsContainer = document.getElementById('subPanelFieldsContainer');
+            const saveSubPanelBtn = document.getElementById('saveSubPanelBtn');
+            const clearSubPanelBtn = document.getElementById('clearSubPanelBtn');
+            const selectedDataStatus = document.getElementById('selectedDataStatus');
+            const panelTitle = document.getElementById('panelTitle');
+
+            const letterLengthSelect = document.getElementById('letterLength');
+            const customWordsWrapper = document.getElementById('customWordsWrapper');
+            const customWordsInput = document.getElementById('customWordsInput');
+            const letterFontInput = document.getElementById('letterFont');
+
+            let subPanelDataStore = {};
+
+            const letterFieldConfigs = {
+                business: {
+                    title: "1. बिजनेस लेटर (Business Letter Form)",
+                    fields: [
+                        { id: 'f1', label: 'प्रेषक का पता (Sender Address)', placeholder: 'जैसे: H.No 12, Main Market' },
+                        { id: 'f2', label: 'प्रेषक का शहर/राज्य (Sender City)', placeholder: 'जैसे: Sirsa, Haryana' },
+                        { id: 'f3', label: 'दिनांक (Letter Date)', placeholder: 'जैसे: October 9, 2026' },
+                        { id: 'f4', label: 'प्राप्तकर्ता पद (Receiver Designation)', placeholder: 'जैसे: Sales Manager' },
+                        { id: 'f5', label: 'कंपनी/फर्म का नाम (Receiver Company)', placeholder: 'जैसे: ABC Enterprises' },
+                        { id: 'f6', label: 'प्राप्तकर्ता शहर (Receiver City)', placeholder: 'जैसे: Delhi' },
+                        { id: 'f7', label: 'विषय (Subject)', placeholder: 'जैसे: Placing an order for electronic items' },
+                        { id: 'f8', label: 'परिचय पंक्ति (Body Intro Text)', placeholder: 'जैसे: We are pleased to order...' },
+                        { id: 'f9', label: 'विस्तृत विवरण पंक्ति (Body Detail Text)', placeholder: 'जैसे: Please find the list of items...' },
+                        { id: 'f10', label: 'निष्कर्ष पंक्ति (Conclusion Text)', placeholder: 'जैसे: Looking forward to timely delivery' },
+                        { id: 'f11', label: 'आपका नाम (Your Name)', placeholder: 'जैसे: Kuldeep' },
+                        { id: 'f12', label: 'आपका पद (Your Designation)', placeholder: 'जैसे: Purchase Head' }
+                    ]
+                },
+                job: {
+                    title: "2. नौकरी हेतु आवेदन + बायो-डाटा (Job Application Format)",
+                    fields: [
+                        { id: 'f1', label: 'प्रेषक का पता (Sender Address)', placeholder: 'पता लिखें...' },
+                        { id: 'f2', label: 'दिनांक (Date)', placeholder: 'तारीख लिखें...' },
+                        { id: 'f3', label: 'कंपनी/संस्थान का नाम और पता', placeholder: 'संस्थान का नाम...' },
+                        { id: 'f4', label: 'पद का नाम (Post Name)', placeholder: 'जैसे: Computer Teacher' },
+                        { id: 'f5', label: 'अखबार या स्रोत का नाम', placeholder: 'जैसे: The Tribune' },
+                        { id: 'f6', label: 'विज्ञापन की तारीख', placeholder: 'तारीख...' },
+                        { id: 'f7', label: 'यूनिवर्सिटी/संस्थान का नाम', placeholder: 'जैसे: MDU Rohtak' },
+                        { id: 'f8', label: 'प्रतिशत/श्रेणी (Marks)', placeholder: 'जैसे: 85% Distinction' },
+                        { id: 'f9', label: 'अनुभव के वर्ष (Experience)', placeholder: 'जैसे: 2 Years' },
+                        { id: 'f10', label: 'पुराना पद (Old Post)', placeholder: 'जैसे: Assistant Teacher' },
+                        { id: 'f11', label: 'पिछली कंपनी का नाम', placeholder: 'कंपनी का नाम...' },
+                        { id: 'f12', label: 'आपका पूरा नाम (Your Name)', placeholder: 'आपका नाम...' },
+                        { id: 'f13', label: 'पिता का नाम (Father\'s Name)', placeholder: 'पिता का नाम...' },
+                        { id: 'f14', label: 'मोबाइल नंबर (Phone No.)', placeholder: 'मोबाइल नंबर...' },
+                        { id: 'f15', label: 'ईमेल आईडी (Email ID)', placeholder: 'ईमेल...' },
+                        { id: 'f16', label: 'शैक्षणिक योग्यता (Qualification)', placeholder: 'योग्यता...' }
+                    ]
+                },
+                editor: {
+                    title: "3. लेटर टू एडिटर (Letter to the Editor)",
+                    fields: [
+                        { id: 'f1', label: 'प्रेषक का पता (Sender Address)', placeholder: 'पता...' },
+                        { id: 'f2', label: 'दिनांक (Date)', placeholder: 'तारीख...' },
+                        { id: 'f3', label: 'अखबार का नाम', placeholder: 'जैसे: The Hindustan Times' },
+                        { id: 'f4', label: 'विषय / मुख्य समस्या (Subject)', placeholder: 'विषय...' },
+                        { id: 'f5', label: 'समस्या का संक्षिप्त नाम', placeholder: 'शीर्षक...' },
+                        { id: 'f6', label: 'समस्या से जुड़ी शुरुआती 2 लाइनें', placeholder: 'शुरुआत...' },
+                        { id: 'f7', label: 'अतिरिक्त प्रभाव / जनता की परेशानी', placeholder: 'विस्तार...' },
+                        { id: 'f8', label: 'संभावित समाधान / प्रशासन से अपेक्षा', placeholder: 'सुझाव...' },
+                        { id: 'f9', label: 'आपका नाम (Your Name)', placeholder: 'नाम...' }
+                    ]
+                },
+                official: {
+                    title: "4. ऑफिशियल, इंक्वायरी, कम्प्लेंट (Official / Complaint)",
+                    fields: [
+                        { id: 'f1', label: 'प्रेषक का पता (Sender Address)', placeholder: 'पता...' },
+                        { id: 'f2', label: 'शहर / पिन कोड (City/Pin)', placeholder: 'शहर...' },
+                        { id: 'f3', label: 'दिनांक (Date)', placeholder: 'तारीख...' },
+                        { id: 'f4', label: 'प्राप्तकर्ता का पद (Designation)', placeholder: 'जैसे: Branch Manager' },
+                        { id: 'f5', label: 'विभाग / प्राधिकरण (Department)', placeholder: 'जैसे: Electricity Board' },
+                        { id: 'f6', label: 'प्राप्तकर्ता का शहर', placeholder: 'शहर...' },
+                        { id: 'f7', label: 'विषय (Subject)', placeholder: 'विषय...' },
+                        { id: 'f8', label: 'मुख्य समस्या का विस्तार', placeholder: 'विस्तार से बताएं...' },
+                        { id: 'f9', label: 'आपका नाम (Your Name)', placeholder: 'नाम...' },
+                        { id: 'f10', label: 'पद / निवासी प्रतिनिधि (Designation/Rep)', placeholder: 'जैसे: Resident Welfare President' }
+                    ]
+                },
+                leave: {
+                    title: "5. अवकाश आवेदन (Leave Application)",
+                    fields: [
+                        { id: 'f1', label: 'विद्यालय / कार्यालय का नाम', placeholder: 'संस्थान का नाम...' },
+                        { id: 'f2', label: 'विषय', placeholder: 'जैसे: 2 दिन के अवकाश हेतु आवेदन' },
+                        { id: 'f3', label: 'अवकाश का कारण', placeholder: 'जैसे: जरूरी घरेलू काम' },
+                        { id: 'f4', label: 'छुट्टी की तारीख (कब से कब तक)', placeholder: 'जैसे: 10-10-2026 से 11-10-2026' },
+                        { id: 'f5', label: 'आपका नाम एवं कक्षा/पद', placeholder: 'नाम और कक्षा...' }
+                    ]
+                },
+                sick: {
+                    title: "6. बीमारी की छुट्टी (Sick Leave)",
+                    fields: [
+                        { id: 'f1', label: 'प्रधानाचार्य / अधिकारी का नाम', placeholder: 'नाम...' },
+                        { id: 'f2', label: 'बीमारी का विवरण', placeholder: 'जैसे: वायरल बुखार और डॉक्टर की सलाह' },
+                        { id: 'f3', label: 'कितने दिनों की छुट्टी चाहिए', placeholder: 'जैसे: 3 दिन' },
+                        { id: 'f4', label: 'आपका नाम', placeholder: 'आपका नाम...' }
+                    ]
+                },
+                permission: {
+                    title: "7. अनुमति पत्र (Permission Letter)",
+                    fields: [
+                        { id: 'f1', label: 'किसकी अनुमति चाहिए', placeholder: 'जैसे: शैक्षणिक भ्रमण (Trip) हेतु' },
+                        { id: 'f2', label: 'कारण और तिथि', placeholder: 'विवरण...' },
+                        { id: 'f3', label: 'आपका नाम व विवरण', placeholder: 'नाम...' }
+                    ]
+                },
+                fee: {
+                    title: "8. फीस माफी हेतु आवेदन (Fee Concession)",
+                    fields: [
+                        { id: 'f1', label: 'प्रधानाचार्य महोदय', placeholder: 'स्कूल का नाम...' },
+                        { id: 'f2', label: 'पारिवारिक आर्थिक स्थिति', placeholder: 'जैसे: पिता की आय सीमित है' },
+                        { id: 'f3', label: 'पिछली कक्षा का प्रदर्शन', placeholder: 'जैसे: 90% अंक प्राप्त किए' },
+                        { id: 'f4', label: 'आपका नाम और रोल नंबर', placeholder: 'नाम, कक्षा, रोल नंबर...' }
+                    ]
+                },
+                congrats: {
+                    title: "9. बधाई पत्र (Congratulatory Letter)",
+                    fields: [
+                        { id: 'f1', label: 'किसे बधाई दी जा रही है', placeholder: 'मित्र या भाई का नाम...' },
+                        { id: 'f2', label: 'किस खुशी में (जैसे: परीक्षा में प्रथम या नई नौकरी)', placeholder: 'सफलता का कारण...' },
+                        { id: 'f3', label: 'आपका नाम', placeholder: 'आपका नाम...' }
+                    ]
+                },
+                custom: {
+                    title: "10. अन्य अपनी मर्जी का पत्र (Custom Letter)",
+                    fields: [
+                        { id: 'f1', label: 'पत्र का मुख्य विषय / शीर्षक', placeholder: 'विषय लिखें...' },
+                        { id: 'f2', label: 'प्राप्तकर्ता का विवरण', placeholder: 'किसके नाम है...' },
+                        { id: 'f3', label: 'मुख्य बातें / विवरण', placeholder: 'यहाँ विस्तार से अपनी बात लिखें...' },
+                        { id: 'f4', label: 'आपका नाम', placeholder: 'आपका नाम...' }
+                    ]
+                }
+            };
+
+            function renderSubPanelFields(type) {
+                if (!subPanelFieldsContainer || !panelTitle) return;
+                const config = letterFieldConfigs[type] || letterFieldConfigs.custom;
+                panelTitle.textContent = config.title;
+                subPanelFieldsContainer.innerHTML = '';
+
+                config.fields.forEach(field => {
+                    const existingVal = subPanelDataStore[type]?.[field.id] || '';
+                    const div = document.createElement('div');
+                    div.className = 'flex flex-col space-y-1';
+                    div.innerHTML = `
+                        <label class="text-[11px] font-semibold uppercase tracking-wider text-slate-300">${field.label}</label>
+                        <input type="text" data-field-id="${field.id}" value="${existingVal}" placeholder="${field.placeholder}" class="bg-slate-800 border border-slate-700 text-white rounded-xl px-3.5 py-2.5 text-xs focus:outline-none focus:ring-2 focus:ring-amber-500/50">
+                    `;
+                    subPanelFieldsContainer.appendChild(div);
+                });
+            }
+
+            if (letterTypeSelect) {
+                letterTypeSelect.addEventListener('change', () => {
+                    if (letterTypeSelect.value === 'custom') {
+                        if (customTypeWrapper) customTypeWrapper.classList.remove('hidden');
+                    } else {
+                        if (customTypeWrapper) customTypeWrapper.classList.add('hidden');
+                    }
+                });
+            }
+
+            if (openTypeInputsBtn) {
+                openTypeInputsBtn.addEventListener('click', () => {
+                    const currentType = letterTypeSelect ? letterTypeSelect.value : 'custom';
+                    renderSubPanelFields(currentType);
+                    if (generatorForm) generatorForm.classList.add('hidden');
+                    if (dynamicInputPanel) dynamicInputPanel.classList.remove('hidden');
+                });
+            }
+
+            if (closeSubPanelBtn) {
+                closeSubPanelBtn.addEventListener('click', () => {
+                    if (dynamicInputPanel) dynamicInputPanel.classList.add('hidden');
+                    if (generatorForm) generatorForm.classList.remove('hidden');
+                });
+            }
+
+            if (saveSubPanelBtn) {
+                saveSubPanelBtn.addEventListener('click', () => {
+                    const currentType = letterTypeSelect ? letterTypeSelect.value : 'custom';
+                    if (!subPanelDataStore[currentType]) {
+                        subPanelDataStore[currentType] = {};
+                    }
+
+                    if (subPanelFieldsContainer) {
+                        const inputs = subPanelFieldsContainer.querySelectorAll('input');
+                        inputs.forEach(input => {
+                            const fieldId = input.getAttribute('data-field-id');
+                            subPanelDataStore[currentType][fieldId] = input.value.trim();
+                        });
+                    }
+
+                    if (dynamicInputPanel) dynamicInputPanel.classList.add('hidden');
+                    if (generatorForm) generatorForm.classList.remove('hidden');
+                    if (selectedDataStatus) selectedDataStatus.classList.remove('hidden');
+                    showToast('डेटा सफलतापूर्वक सहेज लिया गया!');
+                });
+            }
+
+            if (clearSubPanelBtn) {
+                clearSubPanelBtn.addEventListener('click', () => {
+                    if (subPanelFieldsContainer) {
+                        const inputs = subPanelFieldsContainer.querySelectorAll('input');
+                        inputs.forEach(input => input.value = '');
+                    }
+                    const currentType = letterTypeSelect ? letterTypeSelect.value : 'custom';
+                    subPanelDataStore[currentType] = {};
+                    showToast('इनपुट खाली कर दिए गए हैं!');
+                });
+            }
+
+            if (letterLengthSelect && customWordsWrapper) {
+                letterLengthSelect.addEventListener('change', () => {
+                    if (letterLengthSelect.value === 'customWords') {
+                        customWordsWrapper.classList.remove('hidden');
+                    } else {
+                        customWordsWrapper.classList.add('hidden');
+                    }
+                });
+            }
+
+            if (openBtn && modal && modalContent) {
+                openBtn.addEventListener('click', () => {
+                    modal.classList.remove('opacity-0', 'pointer-events-none');
+                    modalContent.classList.remove('scale-95');
+                    modalContent.classList.add('scale-100');
+                });
+            }
+
+            const closeModal = () => {
+                if (modal && modalContent) {
+                    modal.classList.add('opacity-0', 'pointer-events-none');
+                    modalContent.classList.remove('scale-100');
+                    modalContent.classList.add('scale-95');
+                }
+            };
+
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closeModal();
+                });
+            }
+
+            if (toggleApiKeyBtn && apiKeySection) {
+                toggleApiKeyBtn.addEventListener('click', () => {
+                    apiKeySection.classList.toggle('hidden');
+                    const spanText = toggleApiKeyBtn.querySelector('span');
+                    if (spanText) {
+                        spanText.textContent = apiKeySection.classList.contains('hidden') ? 'API Key सेटिंग्स दिखाएं' : 'API Key छुपाएं';
+                    }
+                });
+            }
+
+            function showToast(msg) {
+                if (!toast || !toastMessage) return;
+                toastMessage.textContent = msg;
+                toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                toast.classList.add('opacity-100', 'translate-y-0');
+                setTimeout(() => {
+                    toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                    toast.classList.remove('opacity-100', 'translate-y-0');
+                }, 3000);
+            }
+
+            async function fetchWithRetry(url, options, retries = 3, delay = 1000) {
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) {
+                        if (response.status === 429 && retries > 0) {
+                            await new Promise(res => setTimeout(res, delay));
+                            return fetchWithRetry(url, options, retries - 1, delay * 2);
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    if (retries > 0) {
+                        await new Promise(res => setTimeout(res, delay));
+                        return fetchWithRetry(url, options, retries - 1, delay * 2);
+                    }
+                    throw error;
+                }
+            }
+
+            if (generateBtn) {
+                generateBtn.addEventListener('click', async () => {
+                    const selectedType = letterTypeSelect ? letterTypeSelect.value : 'custom';
+                    
+                    const filledData = subPanelDataStore[selectedType] || {};
+                    let filledDataString = Object.entries(filledData).map(([k, v]) => `${k}:${v}`).join(', ');
+
+                    let displayType = selectedType;
+                    if (displayType === 'custom') {
+                        displayType = customTypeInput?.value.trim() || 'Custom Letter';
+                    }
+
+                    const letterLanguage = document.getElementById('letterLanguage')?.value || 'Hindi';
+                    const selectedFontValue = letterFontInput ? letterFontInput.value : 'sans-serif';
+                    const senderName = document.getElementById('senderName')?.value.trim() || '';
+                    const receiverName = document.getElementById('receiverName')?.value.trim() || '';
+                    const writingStyle = document.getElementById('writingStyle')?.value || 'Professional';
+                    
+                    let letterLength = letterLengthSelect ? letterLengthSelect.value : 'Medium';
+                    if (letterLength === 'customWords' && customWordsInput) {
+                        letterLength = customWordsInput.value.trim() ? `Approx ${customWordsInput.value.trim()} words` : 'Medium (~250 words)';
+                    }
+
+                    const customPrompt = document.getElementById('customPrompt')?.value.trim() || '';
+                    const apiKey = document.getElementById('apiKeyInput')?.value.trim() || '';
+
+                    const includeBiodata = document.getElementById('includeBiodata')?.checked || false;
+                    const includeBold = document.getElementById('includeBold')?.checked || false;
+                    const includePoints = document.getElementById('includePoints')?.checked || false;
+                    const includeSubjectLine = document.getElementById('includeSubjectLine')?.checked || false;
+
+                    if (generatorForm) generatorForm.classList.add('hidden');
+                    if (loadingBox) {
+                        loadingBox.classList.remove('hidden');
+                        loadingBox.classList.add('flex');
+                    }
+
+                    const systemPrompt = `You are an expert web designer and document generator. Write a structured letter/document based on the user parameters and field data. IMPORTANT: If the user asks for specific styling, HTML layout, rainbow text, styled tables, or custom colors, output clean HTML directly (without markdown backticks like \`\`\`html) so that it can be rendered visually on screen. Ensure compact line spacing (use style="line-height: 1.4; margin-bottom: 8px;" for paragraphs and elements) so there is no excessive gap between lines. Ensure tables, inline styles, colors, and structure render properly.`;
+
+                    const userQuery = `Please write a document with the following customized preferences:
+- Letter / Application Type: ${displayType}
+- Specific Details filled by user in input panel: ${filledDataString ? filledDataString : 'None provided'}
+- Language: ${letterLanguage}
+- Sender Name (From): ${senderName ? senderName : 'Not specified, use placeholder'}
+- Receiver Name / Authority (To): ${receiverName ? receiverName : 'Not specified, use appropriate placeholder'}
+- Writing Style / Tone: ${writingStyle}
+- Target Length: ${letterLength}
+- Specific User Instructions / Context: ${customPrompt ? customPrompt : 'General standard letter'}
+- Add Bio-data / Resume attached at bottom?: ${includeBiodata ? 'Yes, include a professional bio-data/resume section' : 'No'}
+- Make key terms bold with Markdown?: ${includeBold ? 'Yes' : 'No'}
+- Use bullet points for key details?: ${includePoints ? 'Yes' : 'No'}
+- Include Subject and Date lines?: ${includeSubjectLine ? 'Yes' : 'No'}`;
+
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+                    const payload = {
+                        contents: [{ parts: [{ text: userQuery }] }],
+                        systemInstruction: {
+                            parts: [{ text: systemPrompt }]
+                        }
+                    };
+
+                    try {
+                        const result = await fetchWithRetry(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        const candidate = result.candidates?.[0];
+                        if (candidate && candidate.content?.parts?.[0]?.text) {
+                            let generatedText = candidate.content.parts[0].text;
+                            
+                            let cleanHTML = generatedText.replace(/```html?/g, '').replace(/```/g, '').trim();
+                            
+                            if (letterOutputText) {
+                                letterOutputText.style.fontFamily = selectedFontValue;
+                                letterOutputText.innerHTML = cleanHTML;
+                            }
+
+                            if (loadingBox) {
+                                loadingBox.classList.add('hidden');
+                                loadingBox.classList.remove('flex');
+                            }
+                            if (resultBox) resultBox.classList.remove('hidden');
+                        } else {
+                            throw new Error('Invalid response structure from Gemini API');
+                        }
+                    } catch (error) {
+                        console.error(error);
+                        if (loadingBox) {
+                            loadingBox.classList.add('hidden');
+                            loadingBox.classList.remove('flex');
+                        }
+                        if (generatorForm) generatorForm.classList.remove('hidden');
+                        showToast('पत्र जनरेट करने में त्रुटि हुई। कृपया पुनः प्रयास करें।');
+                    }
+                });
+            }
+
+            if (copyBtn) {
+                copyBtn.addEventListener('click', () => {
+                    if (!letterOutputText) return;
+                    const textToCopy = letterOutputText.textContent;
+                    const textArea = document.createElement('textarea');
+                    textArea.value = textToCopy;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    try {
+                        document.execCommand('copy');
+                        showToast('पत्र क्लिपबोर्ड पर कॉपी हो गया!');
+                    } catch (err) {
+                        showToast('कॉपी करने में विफल!');
+                    }
+                    document.body.removeChild(textArea);
+                });
+            }
+
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', () => {
+                    if (!letterOutputText) return;
+                    const text = letterOutputText.textContent;
+                    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'Ultimate_AI_Letter.txt';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    showToast('फ़ाइल सफलतापूर्वक डाउनलोड हो गई!');
+                });
+            }
+
+            const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+            if (downloadPdfBtn) {
+                downloadPdfBtn.addEventListener('click', () => {
+                    if (!letterOutputText) return;
+                    
+                    const originalMaxHeight = letterOutputText.style.maxHeight;
+                    const originalOverflow = letterOutputText.style.overflowY;
+                    
+                    letterOutputText.style.maxHeight = 'none';
+                    letterOutputText.style.overflowY = 'visible';
+
+                    const options = {
+                        margin:       10,
+                        filename:     'my-letter-biodata.pdf',
+                        image:        { type: 'jpeg', quality: 0.98 },
+                        html2canvas:  { scale: 2, useCORS: true, logging: false },
+                        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                    };
+
+                    html2pdf().from(letterOutputText).set(options).save().then(() => {
+                        letterOutputText.style.maxHeight = originalMaxHeight;
+                        letterOutputText.style.overflowY = originalOverflow;
+                        showToast('PDF सफलतापूर्वक डाउनलोड हो गई!');
+                    }).catch(err => {
+                        console.error(err);
+                        letterOutputText.style.maxHeight = originalMaxHeight;
+                        letterOutputText.style.overflowY = originalOverflow;
+                        showToast('PDF डाउनलोड करने में त्रुटि हुई!');
+                    });
+                });
+            }
+
+            if (backToFormBtn) {
+                backToFormBtn.addEventListener('click', () => {
+                    if (resultBox) resultBox.classList.add('hidden');
+                    if (generatorForm) generatorForm.classList.remove('hidden');
+                });
+            }
+
+            // Custom Dropdown Selection Logic
+            const trigger = document.getElementById('customFontTrigger');
+            const optionsList = document.getElementById('customFontOptions');
+            const hiddenInput = document.getElementById('letterFont');
+            const selectedLabel = document.getElementById('selectedFontLabel');
+
+            if (trigger && optionsList) {
+                trigger.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    optionsList.classList.toggle('hidden');
+                });
+
+                optionsList.querySelectorAll('.font-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        const value = item.getAttribute('data-value');
+                        const fontStyle = item.style.fontFamily;
+                        
+                        hiddenInput.value = value;
+                        selectedLabel.textContent = item.textContent;
+                        selectedLabel.style.fontFamily = fontStyle;
+                        
+                        optionsList.classList.add('hidden');
+                    });
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!trigger.contains(e.target) && !optionsList.contains(e.target)) {
+                        optionsList.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Full Screen Modal Logic (अब डॉक्युमेंट लोड के अंदर सुरक्षित रूप से है)
+            const fullScreenBtn = document.getElementById('fullScreenBtn');
+            const fullScreenModal = document.getElementById('fullScreenModal');
+            const closeFullScreenBtn = document.getElementById('closeFullScreenBtn');
+            const fullScreenContent = document.getElementById('fullScreenContent');
+            const modalPrintPdfBtn = document.getElementById('modalPrintPdfBtn');
+
+            if (fullScreenBtn && fullScreenModal) {
+                fullScreenBtn.addEventListener('click', () => {
+                    if (!letterOutputText) return;
+                    fullScreenContent.innerHTML = letterOutputText.innerHTML;
+                    fullScreenContent.style.fontFamily = letterFontInput ? letterFontInput.value : 'sans-serif';
+                    fullScreenModal.classList.remove('hidden');
+                });
+            }
+
+            if (closeFullScreenBtn && fullScreenModal) {
+                closeFullScreenBtn.addEventListener('click', () => {
+                    fullScreenModal.classList.add('hidden');
+                });
+            }
+
+            if (modalPrintPdfBtn) {
+                modalPrintPdfBtn.addEventListener('click', () => {
+                    const letterContent = fullScreenContent.innerHTML;
+                    const fontStyle = letterFontInput ? letterFontInput.value : 'sans-serif';
+
+                    const printWindow = window.open('', '_blank', 'height=700,width=900');
+                    printWindow.document.write(`
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <title>Full Screen Letter Print</title>
+                            <script src="https://cdn.tailwindcss.com"><\/script>
+                            <style>
+                                @page { size: A4; margin: 15mm; }
+                                body {
+                                    font-family: ${fontStyle};
+                                    background-color: #ffffff !important;
+                                    color: #000000;
+                                    padding: 20px;
+                                    margin: 0;
+                                    -webkit-print-color-adjust: exact !important;
+                                    print-color-adjust: exact !important;
+                                }
+                                * {
+                                    -webkit-print-color-adjust: exact !important;
+                                    print-color-adjust: exact !important;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            ${letterContent}
+                            <script>
+                                window.onload = function() {
+                                    setTimeout(function() {
+                                        window.print();
+                                        window.close();
+                                    }, 500);
+                                };
+                            <\/script>
+                        </body>
+                        </html>
+                    `);
+                    printWindow.document.close();
+                });
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+// --- 1. पेज लोड होते ही अगर LocalStorage में पहले से API Key सेव है, तो उसे इनपुट बॉक्स में भर दें ---
+window.addEventListener('DOMContentLoaded', () => {
+    const savedApiKey = localStorage.getItem('gemini_user_api_key');
+    const apiKeyInput = document.getElementById('apiKeyInput');
+    
+    if (savedApiKey && apiKeyInput) {
+        apiKeyInput.value = savedApiKey;
+    }
+});
+
+// --- 2. जैसे ही यूजर बटन दबाकर लेटर जनरेट करे या इनपुट में टाइप करे, वह LocalStorage में हमेशा के लिए सेव हो जाए ---
+const apiKeyInput = document.getElementById('apiKeyInput');
+if (apiKeyInput) {
+    apiKeyInput.addEventListener('input', (e) => {
+        const currentKey = e.target.value.trim();
+        if (currentKey) {
+            localStorage.setItem('gemini_user_api_key', currentKey);
+        }
+    });
+}
+
+
+
+    </script>
+</body>
+</html>

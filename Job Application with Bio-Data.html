@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Master Format - Ultimate Pro Edition V3 (33 Themes)</title>
+    <!-- Google Fonts for Classic & Elegant Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Cinzel:wght@700&display=swap');
+
+        /* प्रिंट सेटिंग्स - अब रंग और स्टाइल सुरक्षित रहेंगे */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            body {
+                background: var(--bg-deep) !important;
+                color: var(--text-color) !important;
+                padding: 0 !important;
+            }
+            .container {
+                background: var(--card-bg) !important;
+                box-shadow: none !important;
+                border: 1px solid var(--border-color) !important;
+                padding: 20px !important;
+                max-width: 100% !important;
+            }
+            .action-toolbar, .quick-fill-panel, .utility-bar, .delete-row-btn {
+                display: none !important;
+            }
+        }
+    
+        :root {
+            --bg-deep: #090d16;
+            --card-bg: #111827;
+            --primary-color: #f3f4f6;
+            --accent-gold: #eab308;
+            --text-color: #cbd5e1;
+            --border-color: #1f2937;
+            --highlight-bg: #1a2234;
+            --input-bg: #1f2937;
+            --base-font-size: 16px;
+        }
+
+        /* 33 विभिन्न प्रीमियम थीम वेरिएबल्स */
+        [data-theme="dark"] { --bg-deep: #090d16; --card-bg: #111827; --primary-color: #f3f4f6; --accent-gold: #eab308; --text-color: #cbd5e1; --border-color: #1f2937; --highlight-bg: #1a2234; --input-bg: #1f2937; }
+        [data-theme="light"] { --bg-deep: #f1f5f9; --card-bg: #ffffff; --primary-color: #0f172a; --accent-gold: #d97706; --text-color: #334155; --border-color: #e2e8f0; --highlight-bg: #f8fafc; --input-bg: #f8fafc; }
+        [data-theme="blue"] { --bg-deep: #0f172a; --card-bg: #1e293b; --primary-color: #f8fafc; --accent-gold: #38bdf8; --text-color: #94a3b8; --border-color: #334155; --highlight-bg: #0f172a; --input-bg: #0f172a; }
+        [data-theme="emerald"] { --bg-deep: #022c22; --card-bg: #064e3b; --primary-color: #ecfdf5; --accent-gold: #34d399; --text-color: #a7f3d0; --border-color: #047857; --highlight-bg: #065f46; --input-bg: #022c22; }
+        [data-theme="crimson"] { --bg-deep: #450a0a; --card-bg: #7f1d1d; --primary-color: #fef2f2; --accent-gold: #f87171; --text-color: #fecaca; --border-color: #991b1b; --highlight-bg: #991b1b; --input-bg: #450a0a; }
+        [data-theme="royal-purple"] { --bg-deep: #2e1065; --card-bg: #4c1d95; --primary-color: #f5f3ff; --accent-gold: #c084fc; --text-color: #ddd6fe; --border-color: #6d28d9; --highlight-bg: #5b21b6; --input-bg: #2e1065; }
+        [data-theme="sunset"] { --bg-deep: #431407; --card-bg: #7c2d12; --primary-color: #fff7ed; --accent-gold: #fb923c; --text-color: #fed7aa; --border-color: #9a3412; --highlight-bg: #9a3412; --input-bg: #431407; }
+        [data-theme="cyberpunk"] { --bg-deep: #050505; --card-bg: #121212; --primary-color: #00ffcc; --accent-gold: #ff007f; --text-color: #00ffff; --border-color: #ff007f; --highlight-bg: #1a1a1a; --input-bg: #000000; }
+        [data-theme="coffee"] { --bg-deep: #271c19; --card-bg: #3e2723; --primary-color: #efebe9; --accent-gold: #d7ccc8; --text-color: #bcaaa4; --border-color: #4e342e; --highlight-bg: #4e342e; --input-bg: #271c19; }
+        [data-theme="midnight-blue"] { --bg-deep: #030712; --card-bg: #0f172a; --primary-color: #e0f2fe; --accent-gold: #38bdf8; --text-color: #7dd3fc; --border-color: #1e293b; --highlight-bg: #1e293b; --input-bg: #030712; }
+        [data-theme="forest-mist"] { --bg-deep: #132219; --card-bg: #1b3024; --primary-color: #e8f5e9; --accent-gold: #81c784; --text-color: #c8e6c9; --border-color: #2e5a40; --highlight-bg: #233d2f; --input-bg: #132219; }
+        [data-theme="rose-gold"] { --bg-deep: #2a1b1d; --card-bg: #41272a; --primary-color: #fdf2f4; --accent-gold: #f472b6; --text-color: #fbcfe8; --border-color: #5c373b; --highlight-bg: #4e3034; --input-bg: #2a1b1d; }
+        [data-theme="ocean-breeze"] { --bg-deep: #0a192f; --card-bg: #172a45; --primary-color: #e6f1ff; --accent-gold: #64ffda; --text-color: #8892b0; --border-color: #303c55; --highlight-bg: #1d3354; --input-bg: #0a192f; }
+        [data-theme="matrix"] { --bg-deep: #000000; --card-bg: #0d1117; --primary-color: #00ff00; --accent-gold: #00cc00; --text-color: #00aa00; --border-color: #006600; --highlight-bg: #021a02; --input-bg: #000000; }
+        [data-theme="neon-purple"] { --bg-deep: #0a0118; --card-bg: #17072e; --primary-color: #f3e8ff; --accent-gold: #e879f9; --text-color: #d8b4fe; --border-color: #4c1d95; --highlight-bg: #24094a; --input-bg: #0a0118; }
+        [data-theme="slate-clean"] { --bg-deep: #e2e8f0; --card-bg: #f8fafc; --primary-color: #1e293b; --accent-gold: #0284c7; --text-color: #475569; --border-color: #cbd5e1; --highlight-bg: #ffffff; --input-bg: #ffffff; }
+        [data-theme="sepia-vintage"] { --bg-deep: #fbf0d9; --card-bg: #fdf6e2; --primary-color: #4a3525; --accent-gold: #b26b00; --text-color: #5c4033; --border-color: #e6d0aa; --highlight-bg: #f5ebd0; --input-bg: #f5ebd0; }
+        [data-theme="nordic-frost"] { --bg-deep: #2e3440; --card-bg: #3b4252; --primary-color: #eceff4; --accent-gold: #88c0d0; --text-color: #d8dee9; --border-color: #4c566a; --highlight-bg: #434c5e; --input-bg: #2e3440; }
+        [data-theme="solarized-dark"] { --bg-deep: #002b36; --card-bg: #073642; --primary-color: #eee8d5; --accent-gold: #b58900; --text-color: #93a1a1; --border-color: #586e75; --highlight-bg: #094350; --input-bg: #002b36; }
+        [data-theme="monokai"] { --bg-deep: #1e1f1c; --card-bg: #272822; --primary-color: #f8f8f2; --accent-gold: #a6e22e; --text-color: #75715e; --border-color: #3e3d32; --highlight-bg: #353631; --input-bg: #1e1f1c; }
+        [data-theme="dracula"] { --bg-deep: #21222c; --card-bg: #282a36; --primary-color: #f8f8f2; --accent-gold: #ff79c6; --text-color: #6272a4; --border-color: #44475a; --highlight-bg: #383a59; --input-bg: #21222c; }
+        [data-theme="pastel-pink"] { --bg-deep: #fff0f5; --card-bg: #ffffff; --primary-color: #db7093; --accent-gold: #ffb6c1; --text-color: #8b4513; --border-color: #ffc0cb; --highlight-bg: #fff5f8; --input-bg: #fff5f8; }
+        [data-theme="mint-cream"] { --bg-deep: #f0fff0; --card-bg: #ffffff; --primary-color: #2e8b57; --accent-gold: #3cb371; --text-color: #556b2f; --border-color: #98fb98; --highlight-bg: #f5fff5; --input-bg: #f5fff5; }
+        [data-theme="golden-luxury"] { --bg-deep: #111111; --card-bg: #1a1a1a; --primary-color: #ffffff; --accent-gold: #ffd700; --text-color: #daa520; --border-color: #333333; --highlight-bg: #222222; --input-bg: #111111; }
+        [data-theme="deep-space"] { --bg-deep: #000000; --card-bg: #0b0d19; --primary-color: #ffffff; --accent-gold: #4f46e5; --text-color: #818cf8; --border-color: #1e1b4b; --highlight-bg: #111827; --input-bg: #000000; }
+        [data-theme="ruby-red"] { --bg-deep: #500000; --card-bg: #700000; --primary-color: #ffffff; --accent-gold: #ff4d4d; --text-color: #ffcccc; --border-color: #990000; --highlight-bg: #800000; --input-bg: #500000; }
+        [data-theme="teal-modern"] { --bg-deep: #003333; --card-bg: #004d4d; --primary-color: #e6ffff; --accent-gold: #00ffff; --text-color: #80cccc; --border-color: #006666; --highlight-bg: #005959; --input-bg: #003333; }
+        [data-theme="autumn-gold"] { --bg-deep: #2d1b00; --card-bg: #422800; --primary-color: #fff2cc; --accent-gold: #ffaa00; --text-color: #e5b887; --border-color: #663d00; --highlight-bg: #553300; --input-bg: #2d1b00; }
+        [data-theme="lavender-dream"] { --bg-deep: #1a1528; --card-bg: #282142; --primary-color: #f3e9ff; --accent-gold: #b19cd9; --text-color: #d1c4e9; --border-color: #4a3b75; --highlight-bg: #352c59; --input-bg: #1a1528; }
+        [data-theme="charcoal-steel"] { --bg-deep: #181818; --card-bg: #242424; --primary-color: #ffffff; --accent-gold: #888888; --text-color: #aaaaaa; --border-color: #383838; --highlight-bg: #2a2a2a; --input-bg: #181818; }
+        [data-theme="amber-glow"] { --bg-deep: #1c1400; --card-bg: #2e2100; --primary-color: #fffae6; --accent-gold: #ffb700; --text-color: #e6cc80; --border-color: #4d3600; --highlight-bg: #3d2d00; --input-bg: #1c1400; }
+        [data-theme="arctic-ice"] { --bg-deep: #002233; --card-bg: #00334d; --primary-color: #e6f7ff; --accent-gold: #33bbff; --text-color: #99ddff; --border-color: #004d80; --highlight-bg: #003f66; --input-bg: #002233; }
+        [data-theme="coffee-cream"] { --bg-deep: #3b2f2f; --card-bg: #4a3b3b; --primary-color: #fdf5e6; --accent-gold: #deb887; --text-color: #d2b48c; --border-color: #5c4545; --highlight-bg: #564444; --input-bg: #3b2f2f; }
+        [data-theme="olive-military"] { --bg-deep: #222617; --card-bg: #323821; --primary-color: #f4f6f0; --accent-gold: #b5c99a; --text-color: #c2c5aa; --border-color: #444c2e; --highlight-bg: #3b4227; --input-bg: #222617; }
+        [data-theme="sunset-coral"] { --bg-deep: #331414; --card-bg: #4d1f1f; --primary-color: #ffe6e6; --accent-gold: #ff7f7f; --text-color: #ffb3b3; --border-color: #662626; --highlight-bg: #592626; --input-bg: #331414; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+            font-size: var(--base-font-size);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease, border 0.3s ease;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+
+        .container.watermark::after {
+            content: attr(data-watermark);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 75px;
+            font-weight: 700;
+            color: rgba(234, 179, 8, 0.04);
+            pointer-events: none;
+            z-index: 0;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+.utility-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--highlight-bg);
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+    overflow-x: auto;
+}
+
+.utility-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.utility-group select, .utility-group input {
+    background: var(--input-bg);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+        .quick-fill-panel {
+            background: var(--highlight-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quick-fill-panel h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: var(--accent-gold);
+            font-family: 'Cinzel', serif;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preset-buttons-box {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .form-grid input, .form-grid select {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--primary-color);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: inherit;
+        }
+
+        .form-grid input:focus, .form-grid select:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary-color);
+            font-size: 26px;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary-color);
+            font-size: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        p, .content-block {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: var(--text-color);
+            position: relative;
+            z-index: 1;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .editable {
+            background: rgba(234, 179, 8, 0.08);
+            border-bottom: 1px dashed var(--accent-gold);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-gold);
+            transition: all 0.3s ease;
+        }
+
+        .editable:hover {
+            background: rgba(234, 179, 8, 0.18);
+        }
+
+        .editable:focus {
+            outline: none;
+            background: var(--input-bg);
+            box-shadow: 0 0 0 2px var(--accent-gold);
+            color: var(--primary-color);
+        }
+
+        .bio-list {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bio-list li {
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            background: var(--highlight-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-gold);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .bio-list li .bio-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-grow: 1;
+        }
+
+        .bio-list li:hover {
+            transform: translateX(4px);
+        }
+
+        .delete-row-btn {
+            background: transparent;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-left: auto;
+        }
+        .delete-row-btn:hover {
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .signature {
+            margin-top: 35px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .action-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn {
+            background: var(--input-bg);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            padding: 9px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+            border-color: var(--accent-gold);
+        }
+
+        .btn-gold {
+            background: var(--accent-gold);
+            color: #090d16;
+            border: none;
+        }
+
+        .btn-gold:hover {
+            background: #facc15;
+            color: #000;
+        }
+        .btn-danger {
+            background: #7f1d1d;
+            color: #fef2f2;
+            border: none;
+        }
+        .btn-danger:hover {
+            background: #991b1b;
+        }
+
+        .live-stats {
+            text-align: right;
+            font-size: 12px;
+            color: var(--text-color);
+            margin-top: 15px;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+
+    <div class="container watermark" id="mainContainer" data-watermark="OFFICIAL DRAFT">
+        
+        <!-- Utility Bar -->
+        <div class="utility-bar">
+            <div class="utility-group">
+                <label style="font-size: 12px; font-weight: 600;">🔤 फॉन्ट:</label>
+                <select id="fontSizeSelect" onchange="changeFontSize(this.value)">
+                    <option value="14px">छोटा</option>
+                    <option value="16px" selected>सामान्य</option>
+                    <option value="18px">बड़ा</option>
+                </select>
+            </div>
+            <div class="utility-group">
+                <label style="font-size: 12px; font-weight: 600;">🎨 थीम (33):</label>
+                <select id="themeSelect" onchange="changeThemeMode(this.value)">
+                    <option value="dark" selected>1. डार्क मोड (Obsidian)</option>
+                    <option value="light">2. लाइट मोड (Clean)</option>
+                    <option value="blue">3. प्रो ब्लू (Slate Blue)</option>
+                    <option value="emerald">4. एमेरल्ड ग्रीन (Emerald)</option>
+                    <option value="crimson">5. क्रिमसन रेड (Crimson)</option>
+                    <option value="royal-purple">6. रॉयल पर्पल (Royal Purple)</option>
+                    <option value="sunset">7. सनसेट ऑरेन्ज (Sunset)</option>
+                    <option value="cyberpunk">8. साइबरपंक नियोन (Cyberpunk)</option>
+                    <option value="coffee">9. रिच कॉफ़ी (Coffee)</option>
+                    <option value="midnight-blue">10. मिडनाइट ब्लू (Midnight)</option>
+                    <option value="forest-mist">11. फॉरेस्ट मिस्ट (Forest)</option>
+                    <option value="rose-gold">12. रोज़ गोल्ड (Rose Gold)</option>
+                    <option value="ocean-breeze">13. ओशन ब्रीज (Ocean)</option>
+                    <option value="matrix">14. मैट्रिक्स ग्रीन (Matrix)</option>
+                    <option value="neon-purple">15. नियोन पर्पल (Neon Purple)</option>
+                    <option value="slate-clean">16. स्लेट क्लीन (Slate Clean)</option>
+                    <option value="sepia-vintage">17. सेपिया विंटेज (Vintage)</option>
+                    <option value="nordic-frost">18. नॉर्डिक फ्रॉस्ट (Nordic)</option>
+                    <option value="solarized-dark">19. सोलरराइज्ड डार्क (Solarized)</option>
+                    <option value="monokai">20. मोनोकि प्रो (Monokai)</option>
+                    <option value="dracula">21. ड्रैकुला डार्क (Dracula)</option>
+                    <option value="pastel-pink">22. पेस्टल पिंक (Pastel Pink)</option>
+                    <option value="mint-cream">23. मिंट क्रीम (Mint Cream)</option>
+                    <option value="golden-luxury">24. गोल्डन लग्‍जरी (Golden)</option>
+                    <option value="deep-space">25. डीप स्पेस (Deep Space)</option>
+                    <option value="ruby-red">26. रूबी रेड (Ruby Red)</option>
+                    <option value="teal-modern">27. टील मॉडर्न (Teal Modern)</option>
+                    <option value="autumn-gold">28. ऑटम गोल्ड (Autumn Gold)</option>
+                    <option value="lavender-dream">29. लैवेंडर ड्रीम (Lavender)</option>
+                    <option value="charcoal-steel">30. चारकोल स्टील (Charcoal)</option>
+                    <option value="amber-glow">31. एम्बर ग्लो (Amber Glow)</option>
+                    <option value="arctic-ice">32. आर्कटिक आइस (Arctic Ice)</option>
+                    <option value="olive-military">33. ओलिव मिलिट्री (Olive)</option>
+                </select>
+            </div>
+            <div class="utility-group">
+                <label style="font-size: 12px; font-weight: 600;">🛡 वॉटरमार्क:</label>
+                <select id="watermarkSelect" onchange="handleWatermarkChange(this.value)">
+                    <option value="OFFICIAL DRAFT" selected>Official Draft</option>
+                    <option value="CONFIDENTIAL">Confidential</option>
+                    <option value="VERIFIED COPY">Verified Copy</option>
+                    <option value="CUSTOM_INPUT">✏️ खुद टाइप करें...</option>
+                    <option value="">कोई नहीं</option>
+                </select>
+                <input type="text" id="customWatermarkInput" placeholder="अपना वॉटरमार्क लिखें..." style="display:none; padding:4px 8px; font-size:12px; background:var(--input-bg); color:var(--primary-color); border:1px solid var(--border-color); border-radius:4px;" oninput="applyCustomWatermark(this.value)">
+            </div>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="action-toolbar" id="toolbar">
+            <button class="btn btn-gold" onclick="window.print()">🖨 प्रिंट / पीडीएफ</button>
+            <button class="btn" onclick="copyContent()">📋 कॉपी करें</button>
+            <button class="btn btn-danger" onclick="resetContent()" style="border-color: #ef4444; color: #ffffff;">🔄 रीसेट</button>
+        </div>
+
+        <!-- Quick Form Panel -->
+        <div class="quick-fill-panel">
+            <h3>
+                <span>⚡ स्मार्ट डेटा फिलर और प्री-सेट प्रोफाइल्स</span>
+            </h3>
+            
+            <div class="preset-buttons-box">
+                <span style="font-size: 12px; font-weight: 600; color: var(--accent-gold); align-self: center;">वन-क्लिक प्रोफाइल्स:</span>
+                <button class="btn" onclick="loadPreset('fresher')" style="font-size: 11px; padding: 4px 10px;">🎓 फ्रेसर छात्र</button>
+                <button class="btn" onclick="loadPreset('experienced')" style="font-size: 11px; padding: 4px 10px;">💼 अनुभवी कर्मी</button>
+                <button class="btn" onclick="loadPreset('teacher')" style="font-size: 11px; padding: 4px 10px;">👨‍🏫 टीचर / कोच</button>
+            </div>
+
+            <div class="form-grid">
+                <input type="text" id="qSender" placeholder="प्रेषक का पता (Sender Address)">
+                <input type="text" id="qDate" placeholder="दिनांक (Date)">
+                <input type="text" id="qReceiver" placeholder="प्राप्तकर्ता का पद और पता / Receiver's Designation & Address">
+                <input type="text" id="qCompany" placeholder="कंपनी/संस्थान का नाम और पता">
+                <input type="text" id="qPost" placeholder="पद का नाम (Post Name)">
+                <input type="text" id="qNewspaper" placeholder="अखबार या स्रोत का नाम">
+                <input type="text" id="qNewsDate" placeholder="विज्ञापन की तारीख">
+                <input type="text" id="qUniversity" placeholder="यूनिवर्सिटी/संस्थान का नाम">
+                <input type="text" id="qMarks" placeholder="प्रतिशत/श्रेणी (Marks)">
+                <input type="text" id="qExpYears" placeholder="अनुभव के वर्ष (जैसे: 2 Years)">
+                <input type="text" id="qOldPost" placeholder="पुराना पद (Old Post)">
+                <input type="text" id="qPrevCompany" placeholder="पिछली कंपनी का नाम">
+                <input type="text" id="qName" placeholder="आपका पूरा नाम (Your Name)">
+                <input type="text" id="qFather" placeholder="पिता का नाम (Father's Name)">
+                <input type="text" id="qPhone" placeholder="मोबाइल नंबर (Phone No.)">
+                <input type="text" id="qEmail" placeholder="ईमेल आईडी (Email ID)">
+                <input type="text" id="qEdu" placeholder="शैक्षणिक योग्यता (Qualification)">
+            </div>
+            
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button class="btn btn-gold" onclick="fillQuickData()" style="flex: 1; justify-content: center;">✨ डेटा ऑटो-फिल करें</button>
+                <button class="btn btn-danger" onclick="clearQuickInputs()" style="flex: 1; justify-content: center;">इनपुट खाली करें</button>
+            </div>
+        </div>
+
+        <h1>Job Application Standard Format <br><span style="font-size: 16px; color: var(--accent-gold); font-weight: 600; letter-spacing: 1px;">(मास्टर फॉर्मेट - Ultimate Pro)</span></h1>
+
+        <p><span contenteditable="true" class="editable" id="field_sender">[प्रेषक का पता / Sender's Address] (जैसे: 15, TP Nagar, Delhi)</span></p>
+
+        <p><span contenteditable="true" class="editable" id="field_date">[दिनांक / Date]</span></p>
+
+        <p><span contenteditable="true" class="editable" id="field_receiver_addr">[प्राप्तकर्ता का पद और पता / Receiver's Designation & Address]</span><br>
+        The Manager / Managing Director,<br>
+        <span contenteditable="true" class="editable" id="field_company">[कंपनी या संस्थान का नाम और पता - प्रश्न के अनुसार]</span></p>
+
+        <p><strong>विषय (Subject):</strong> Application for the post of <span contenteditable="true" class="editable" id="field_post_sub">[पद का नाम जो प्रश्न में पूछा गया हो]</span></p>
+
+        <p><strong>महोदय (Dear Sir/Madam),</strong></p>
+
+        <p>This is with reference to the advertisement published in <span contenteditable="true" class="editable" id="field_newspaper">[अखबार या वेबसाइट का नाम, जैसे: The Times of India]</span>, dated <span contenteditable="true" class="editable" id="field_news_date">[विज्ञापन की तारीख]</span>. I am writing this letter to apply for the post of <span contenteditable="true" class="editable" id="field_post_body">[पद का नाम]</span> in your esteemed organization.</p>
+
+        <p>I have completed my <span contenteditable="true" class="editable" id="field_edu_body">[शैक्षणिक योग्यता, जैसे: Graduation / B.Com / M.P.Ed]</span> from <span contenteditable="true" class="editable" id="field_university">[यूनिवर्सिटी/संस्थान का नाम]</span> with <span contenteditable="true" class="editable" id="field_marks">[प्रतिशत/श्रेणी, यदि दी हो]</span> marks. I also possess <span contenteditable="true" class="editable" id="field_exp_years">[अनुभव के वर्ष, जैसे: 2/4/5 years]</span> of working experience as a <span contenteditable="true" class="editable" id="field_old_post">[पुराना पद, यदि हो]</span> at <span contenteditable="true" class="editable" id="field_prev_company">[पिछली कंपनी का नाम]</span>.</p>
+
+        <p>I am dynamic, hardworking, and confident that my skills and qualifications match the requirements of the job. I am enclosing a copy of my bio-data for your perusal and kind consideration.</p>
+
+        <p>I would be available for an interview on any day of your convenience. If given an opportunity, I assure you that I will serve your organization with utmost dedication.</p>
+
+        <div class="signature">
+            <p>Yours faithfully,<br>
+            <strong><span contenteditable="true" class="editable" id="field_name_sig">[आपका नाम - प्रश्न के अनुसार]</span></strong></p>
+        </div>
+
+        <h2>Bio-Data Format (बायो-डाटा फॉर्मेट - डायनेमिक)</h2>
+
+        <ul class="bio-list" id="bioListContainer">
+            <li>
+                <div class="bio-content"><strong>Name:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_name">[आपका नाम]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Father's Name:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_father">[पिता का नाम]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Date of Birth:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_dob">[जन्मतिथि]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Address:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_address">[पता]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Phone No.:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_phone">[मोबाइल नंबर]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>E-Mail:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_email">[ईमेल आईडी]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Marital Status:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_marital">[विवाहित/अविवाहित - Unmarried]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Nationality:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_nationality">[भारतीय - Indian]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Academic Qualification:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_qualification">[योग्यता, जैसे: B.Com / B.A. / BFA आदि]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Experience:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_experience">[अनुभव]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Skills / Strengths:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_skills">[विशेषताएं]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Hobbies:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_hobbies">[शौक]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+            <li>
+                <div class="bio-content"><strong>Languages Known:</strong> <span contenteditable="true" class="editable bio-item" data-key="bio_languages">[भाषाएं]</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            </li>
+        </ul>
+
+        <div style="margin-top: 15px; text-align: center;">
+            <button class="btn btn-gold" onclick="addNewBioRow()" style="display: inline-flex; justify-content: center; margin: 0 auto;">➕ बायो-डाटा में नई पंक्ति (Row) जोड़ें</button>
+        </div>
+
+        <div class="live-stats" id="liveStats">
+            कुल शब्द: 0 | कुल अक्षर: 0
+        </div>
+    </div>
+
+    <!-- JavaScript - With Local Storage System Integrated -->
+    <script>
+        window.onload = function() {
+            loadSavedData();
+
+            const dateField = document.querySelector('#field_date');
+            if(dateField && (dateField.innerText.includes('दिनांक') || dateField.innerText.trim() === '')) {
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateField.innerText = new Date().toLocaleDateString('en-US', options);
+                document.getElementById('qDate').value = dateField.innerText;
+                saveAllData();
+            }
+
+            setupLiveListeners();
+            updateLiveStats();
+        };
+
+        // ---------------- Local Storage Functions ---------------- //
+
+        function saveAllData() {
+            // 1. Save Editable Fields
+            const editableData = {};
+            document.querySelectorAll('.editable').forEach((el) => {
+                if(el.id) {
+                    editableData[el.id] = el.innerHTML;
+                }
+            });
+            localStorage.setItem('job_app_editables', JSON.stringify(editableData));
+
+            // 2. Save Quick Panel Inputs
+            const quickInputs = {};
+            document.querySelectorAll('.quick-fill-panel input').forEach((input) => {
+                quickInputs[input.id] = input.value;
+            });
+            localStorage.setItem('job_app_quick_inputs', JSON.stringify(quickInputs));
+
+            // 3. Save Bio Data List HTML Structure (Dynamic Rows included)
+            const bioListContainer = document.getElementById('bioListContainer');
+            if(bioListContainer) {
+                localStorage.setItem('job_app_bio_structure', bioListContainer.innerHTML);
+            }
+
+            // 4. Save Theme, Font Size & Watermark Settings
+            const theme = document.getElementById('themeSelect').value;
+            const fontSize = document.getElementById('fontSizeSelect').value;
+            const watermark = document.getElementById('watermarkSelect').value;
+            const customWatermark = document.getElementById('customWatermarkInput').value;
+
+            localStorage.setItem('job_app_theme', theme);
+            localStorage.setItem('job_app_fontsize', fontSize);
+            localStorage.setItem('job_app_watermark', watermark);
+            localStorage.setItem('job_app_custom_watermark', customWatermark);
+        }
+
+        function loadSavedData() {
+            // 1. Restore Bio Structure First
+            const savedBioStructure = localStorage.getItem('job_app_bio_structure');
+            if(savedBioStructure) {
+                document.getElementById('bioListContainer').innerHTML = savedBioStructure;
+            }
+
+            // 2. Restore Editable Fields Content
+            const savedEditables = localStorage.getItem('job_app_editables');
+            if(savedEditables) {
+                const editablesObj = JSON.parse(savedEditables);
+                for(let id in editablesObj) {
+                    const el = document.getElementById(id);
+                    if(el) {
+                        el.innerHTML = editablesObj[id];
+                    }
+                }
+            }
+
+            // 3. Restore Quick Panel Inputs
+            const savedQuickInputs = localStorage.getItem('job_app_quick_inputs');
+            if(savedQuickInputs) {
+                const quickObj = JSON.parse(savedQuickInputs);
+                for(let id in quickObj) {
+                    const input = document.getElementById(id);
+                    if(input) {
+                        input.value = quickObj[id];
+                    }
+                }
+            }
+
+            // 4. Restore Settings (Theme, Font Size, Watermark)
+            const savedTheme = localStorage.getItem('job_app_theme');
+            if(savedTheme) {
+                document.getElementById('themeSelect').value = savedTheme;
+                changeThemeMode(savedTheme);
+            }
+
+            const savedFontSize = localStorage.getItem('job_app_fontsize');
+            if(savedFontSize) {
+                document.getElementById('fontSizeSelect').value = savedFontSize;
+                changeFontSize(savedFontSize);
+            }
+
+            const savedWatermark = localStorage.getItem('job_app_watermark');
+            const savedCustomWatermark = localStorage.getItem('job_app_custom_watermark');
+            if(savedWatermark !== null) {
+                document.getElementById('watermarkSelect').value = savedWatermark;
+                if(savedWatermark === 'CUSTOM_INPUT') {
+                    document.getElementById('customWatermarkInput').style.display = 'inline-block';
+                    if(savedCustomWatermark) {
+                        document.getElementById('customWatermarkInput').value = savedCustomWatermark;
+                        applyCustomWatermark(savedCustomWatermark);
+                    }
+                } else {
+                    applyCustomWatermark(savedWatermark);
+                }
+            }
+        }
+
+        // ---------------- Event Listeners & Core Logic ---------------- //
+
+        function setupLiveListeners() {
+            // ContentEditable Elements Change
+            document.querySelectorAll('.editable').forEach((el) => {
+                el.oninput = function() {
+                    updateLiveStats();
+                    saveAllData();
+                };
+            });
+
+            // Quick Panel Input Changes
+            document.querySelectorAll('.quick-fill-panel input').forEach((input) => {
+                input.oninput = function() {
+                    saveAllData();
+                };
+            });
+        }
+
+        function updateLiveStats() {
+            const containerText = document.querySelector('.container').innerText;
+            const words = containerText.trim().split(/\s+/).filter(Boolean).length;
+            const chars = containerText.length;
+            const stats = document.getElementById('liveStats');
+            if(stats) {
+                stats.innerText = `कुल शब्द (Words): ${words} | कुल अक्षर (Characters): ${chars}`;
+            }
+        }
+
+        function loadPreset(type) {
+            if(type === 'fresher') {
+                document.getElementById('qSender').value = "15, TP Nagar, Delhi";
+                document.getElementById('qDate').value = "October 3, 2026";
+                document.getElementById('qReceiver').value = "The Director, Public Relations, Delhi";
+                document.getElementById('qCompany').value = "Tech Solutions, Delhi";
+                document.getElementById('qPost').value = "Junior Developer / Assistant";
+                document.getElementById('qNewspaper').value = "The Times of India";
+                document.getElementById('qNewsDate').value = "October 1, 2026";
+                document.getElementById('qUniversity').value = "Delhi University";
+                document.getElementById('qMarks').value = "85%";
+                document.getElementById('qExpYears').value = "Fresher";
+                document.getElementById('qOldPost').value = "Intern";
+                document.getElementById('qPrevCompany').value = "N/A";
+                document.getElementById('qName').value = "Kuldeep";
+                document.getElementById('qFather').value = "Sh. Khushi Ram";
+                document.getElementById('qPhone').value = "+91 9876543210";
+                document.getElementById('qEmail').value = "kuldeep@email.com";
+                document.getElementById('qEdu').value = "Graduation / B.Com";
+            } else if(type === 'experienced') {
+                document.getElementById('qSender').value = "Nathusari Chopta, Sirsa";
+                document.getElementById('qDate').value = "October 3, 2026";
+                document.getElementById('qReceiver').value = "The General Manager, HR Department";
+                document.getElementById('qCompany').value = "Global Corp";
+                document.getElementById('qPost').value = "Senior Executive Operations";
+                document.getElementById('qNewspaper').value = "Hindustan Times";
+                document.getElementById('qNewsDate').value = "September 28, 2026";
+                document.getElementById('qUniversity').value = "Kurukshetra University";
+                document.getElementById('qMarks').value = "First Division";
+                document.getElementById('qExpYears').value = "4 years";
+                document.getElementById('qOldPost').value = "Executive";
+                document.getElementById('qPrevCompany').value = "Apex Solutions";
+                document.getElementById('qName').value = "Kuldeep";
+                document.getElementById('qFather').value = "Sh. Khushi Ram";
+                document.getElementById('qPhone').value = "+91 9876543210";
+                document.getElementById('qEmail').value = "kuldeep.exp@email.com";
+                document.getElementById('qEdu').value = "Post Graduation";
+            } else if(type === 'teacher') {
+                document.getElementById('qSender').value = "Govt School Zone, Haryana";
+                document.getElementById('qDate').value = "October 3, 2026";
+                document.getElementById('qReceiver').value = "The Principal";
+                document.getElementById('qCompany').value = "Model Sanskriti School";
+                document.getElementById('qPost').value = "Physical Education & Computer Teacher";
+                document.getElementById('qNewspaper').value = "Dainik Bhaskar";
+                document.getElementById('qNewsDate').value = "September 30, 2026";
+                document.getElementById('qUniversity').value = "MDU Rohtak";
+                document.getElementById('qMarks').value = "88%";
+                document.getElementById('qExpYears').value = "3 years";
+                document.getElementById('qOldPost').value = "Guest Teacher";
+                document.getElementById('qPrevCompany').value = "Govt Model School";
+                document.getElementById('qName').value = "Kuldeep";
+                document.getElementById('qFather').value = "Sh. Khushi Ram";
+                document.getElementById('qPhone').value = "+91 9876543210";
+                document.getElementById('qEmail').value = "kuldeep.teacher@email.com";
+                document.getElementById('qEdu').value = "M.P.Ed / B.Ed";
+            }
+            fillQuickData();
+        }
+
+        function fillQuickData() {
+            const sender = document.getElementById('qSender').value;
+            const date = document.getElementById('qDate').value;
+            const receiver = document.getElementById('qReceiver').value;
+            const company = document.getElementById('qCompany').value;
+            const post = document.getElementById('qPost').value;
+            const newspaper = document.getElementById('qNewspaper').value;
+            const newsDate = document.getElementById('qNewsDate').value;
+            const university = document.getElementById('qUniversity').value;
+            const marks = document.getElementById('qMarks').value;
+            const expYears = document.getElementById('qExpYears').value;
+            const oldPost = document.getElementById('qOldPost').value;
+            const prevCompany = document.getElementById('qPrevCompany').value;
+            const name = document.getElementById('qName').value;
+            const edu = document.getElementById('qEdu').value;
+
+            if(sender) document.getElementById('field_sender').innerText = sender;
+            if(date) document.getElementById('field_date').innerText = date;
+            if(receiver) document.getElementById('field_receiver_addr').innerText = receiver;
+            if(company) document.getElementById('field_company').innerText = company;
+            if(post) {
+                document.getElementById('field_post_sub').innerText = post;
+                document.getElementById('field_post_body').innerText = post;
+            }
+            if(newspaper) document.getElementById('field_newspaper').innerText = newspaper;
+            if(newsDate) document.getElementById('field_news_date').innerText = newsDate;
+            if(university) document.getElementById('field_university').innerText = university;
+            if(marks) document.getElementById('field_marks').innerText = marks;
+            if(expYears) document.getElementById('field_exp_years').innerText = expYears;
+            if(oldPost) document.getElementById('field_old_post').innerText = oldPost;
+            if(prevCompany) document.getElementById('field_prev_company').innerText = prevCompany;
+            if(name) document.getElementById('field_name_sig').innerText = name;
+            if(edu) document.getElementById('field_edu_body').innerText = edu;
+
+            saveAllData();
+        }
+
+        function clearQuickInputs() {
+            document.querySelectorAll('.quick-fill-panel input').forEach(input => input.value = '');
+            saveAllData();
+        }
+
+        function addNewBioRow() {
+            const labelName = prompt("नई फील्ड का नाम दर्ज करें (जैसे: Skills, Computer Knowledge):", "Computer Knowledge");
+            if(!labelName) return;
+            const fieldValue = prompt("इस फील्ड का विवरण दर्ज करें:", "HTML, CSS, JavaScript");
+            
+            const ul = document.getElementById('bioListContainer');
+            const li = document.createElement('li');
+            const uniqueId = 'field_bio_custom_' + Date.now();
+            li.innerHTML = `
+                <div class="bio-content"><strong>${labelName}:</strong> <span contenteditable="true" class="editable bio-item" id="${uniqueId}">${fieldValue || ''}</span></div>
+                <button class="delete-row-btn" onclick="removeBioRow(this)">❌</button>
+            `;
+            ul.appendChild(li);
+            setupLiveListeners();
+            saveAllData();
+        }
+
+        function removeBioRow(btn) {
+            if(confirm('क्या आप इस पंक्ति को हटाना चाहते हैं?')) {
+                btn.parentElement.remove();
+                updateLiveStats();
+                saveAllData();
+            }
+        }
+
+        function copyContent() {
+            const containerText = document.querySelector('.container').innerText;
+            navigator.clipboard.writeText(containerText).then(() => {
+                alert('टेक्स्ट सफलतापूर्वक कॉपी हो गया!');
+            });
+        }
+
+        function resetContent() {
+            if(confirm('क्या आप सभी डेटा और लोकल स्टोरेज को रीसेट करना चाहते हैं?')) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        function handleWatermarkChange(val) {
+            const customInput = document.getElementById('customWatermarkInput');
+            if(val === 'CUSTOM_INPUT') {
+                customInput.style.display = 'inline-block';
+                customInput.focus();
+            } else {
+                customInput.style.display = 'none';
+                applyCustomWatermark(val);
+            }
+            saveAllData();
+        }
+
+        function applyCustomWatermark(text) {
+            const container = document.getElementById('mainContainer');
+            container.setAttribute('data-watermark', text);
+            if(text === "") {
+                container.classList.remove('watermark');
+            } else {
+                container.classList.add('watermark');
+            }
+            saveAllData();
+        }
+
+        function changeThemeMode(mode) {
+            document.body.setAttribute('data-theme', mode);
+            saveAllData();
+        }
+
+        function changeFontSize(size) {
+            document.documentElement.style.setProperty('--base-font-size', size);
+            saveAllData();
+        }
+    </script>
+</body>
+</html>

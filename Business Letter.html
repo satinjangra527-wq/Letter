@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Letter Master Format - CBSE Edition (Expanded Themes & Watermarks)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Cinzel:wght@700&display=swap');
+
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            body {
+                background: var(--bg-deep) !important;
+                color: var(--text-color) !important;
+                padding: 0 !important;
+            }
+            .container {
+                background: var(--card-bg) !important;
+                box-shadow: none !important;
+                border: 1px solid var(--border-color) !important;
+                padding: 20px !important;
+                max-width: 100% !important;
+            }
+            .action-toolbar, .quick-fill-panel, .utility-bar, .delete-row-btn, .add-row-btn {
+                display: none !important;
+            }
+        }
+    
+        :root {
+            --bg-deep: #090d16;
+            --card-bg: #111827;
+            --primary-color: #f3f4f6;
+            --accent-gold: #eab308;
+            --text-color: #cbd5e1;
+            --border-color: #1f2937;
+            --highlight-bg: #1a2234;
+            --input-bg: #1f2937;
+            --base-font-size: 16px;
+        }
+
+        /* 33 Themes Definition */
+        [data-theme="dark"] { --bg-deep: #090d16; --card-bg: #111827; --primary-color: #f3f4f6; --accent-gold: #eab308; --text-color: #cbd5e1; --border-color: #1f2937; --highlight-bg: #1a2234; --input-bg: #1f2937; }
+        [data-theme="light"] { --bg-deep: #f1f5f9; --card-bg: #ffffff; --primary-color: #0f172a; --accent-gold: #d97706; --text-color: #334155; --border-color: #e2e8f0; --highlight-bg: #f8fafc; --input-bg: #f8fafc; }
+        [data-theme="blue"] { --bg-deep: #0f172a; --card-bg: #1e293b; --primary-color: #f8fafc; --accent-gold: #38bdf8; --text-color: #94a3b8; --border-color: #334155; --highlight-bg: #0f172a; --input-bg: #0f172a; }
+        [data-theme="emerald"] { --bg-deep: #022c22; --card-bg: #064e3b; --primary-color: #ecfdf5; --accent-gold: #34d399; --text-color: #a7f3d0; --border-color: #047857; --highlight-bg: #065f46; --input-bg: #022c22; }
+        [data-theme="crimson"] { --bg-deep: #450a0a; --card-bg: #7f1d1d; --primary-color: #fef2f2; --accent-gold: #f87171; --text-color: #fecaca; --border-color: #991b1b; --highlight-bg: #991b1b; --input-bg: #450a0a; }
+        [data-theme="purple"] { --bg-deep: #2e1065; --card-bg: #4c1d95; --primary-color: #f3e8ff; --accent-gold: #c084fc; --text-color: #e9d5ff; --border-color: #581c87; --highlight-bg: #3b0764; --input-bg: #2e1065; }
+        [data-theme="sunset"] { --bg-deep: #431407; --card-bg: #7c2d12; --primary-color: #fff7ed; --accent-gold: #fb923c; --text-color: #ffedd5; --border-color: #9a3412; --highlight-bg: #531706; --input-bg: #431407; }
+        [data-theme="cyberpunk"] { --bg-deep: #030712; --card-bg: #0f172a; --primary-color: #f43f5e; --accent-gold: #06b6d4; --text-color: #e2e8f0; --border-color: #f43f5e; --highlight-bg: #1e1b4b; --input-bg: #030712; }
+        [data-theme="coffee"] { --bg-deep: #1c1917; --card-bg: #292524; --primary-color: #fafaf9; --accent-gold: #d7b59e; --text-color: #d6d3d1; --border-color: #44403c; --highlight-bg: #1c1917; --input-bg: #1c1917; }
+        [data-theme="midnight"] { --bg-deep: #020617; --card-bg: #0f172a; --primary-color: #e2e8f0; --accent-gold: #38bdf8; --text-color: #94a3b8; --border-color: #1e293b; --highlight-bg: #090d16; --input-bg: #020617; }
+        [data-theme="forest"] { --bg-deep: #064e3b; --card-bg: #065f46; --primary-color: #ecfdf5; --accent-gold: #6ee7b7; --text-color: #a7f3d0; --border-color: #047857; --highlight-bg: #022c22; --input-bg: #064e3b; }
+        [data-theme="rosegold"] { --bg-deep: #4c0519; --card-bg: #881337; --primary-color: #fff1f2; --accent-gold: #fda4af; --text-color: #fecdd3; --border-color: #9f1239; --highlight-bg: #5c0620; --input-bg: #4c0519; }
+        [data-theme="ocean"] { --bg-deep: #082f49; --card-bg: #0369a1; --primary-color: #f0f9ff; --accent-gold: #7dd3fc; --text-color: #bae6fd; --border-color: #0284c7; --highlight-bg: #0c4a6e; --input-bg: #082f49; }
+        [data-theme="matrix"] { --bg-deep: #02230d; --card-bg: #052e16; --primary-color: #dcfce7; --accent-gold: #4ade80; --text-color: #bbf7d0; --border-color: #166534; --highlight-bg: #021a09; --input-bg: #02230d; }
+        [data-theme="neonpurple"] { --bg-deep: #3b0764; --card-bg: #581c87; --primary-color: #faf5ff; --accent-gold: #e879f9; --text-color: #f3e8ff; --border-color: #6b21a8; --highlight-bg: #2e1065; --input-bg: #3b0764; }
+        [data-theme="slateclean"] { --bg-deep: #1e293b; --card-bg: #334155; --primary-color: #f8fafc; --accent-gold: #cbd5e1; --text-color: #e2e8f0; --border-color: #475569; --highlight-bg: #0f172a; --input-bg: #1e293b; }
+        [data-theme="vintage"] { --bg-deep: #292524; --card-bg: #44403c; --primary-color: #f5f5f4; --accent-gold: #d4d4d8; --text-color: #e7e5e4; --border-color: #57534e; --highlight-bg: #1c1917; --input-bg: #292524; }
+        [data-theme="nordic"] { --bg-deep: #2e3440; --card-bg: #3b4252; --primary-color: #eceff4; --accent-gold: #88c0d0; --text-color: #d8dee9; --border-color: #434c5e; --highlight-bg: #242933; --input-bg: #2e3440; }
+        [data-theme="solarized"] { --bg-deep: #002b36; --card-bg: #073642; --primary-color: #eee8d5; --accent-gold: #b58900; --text-color: #93a1a1; --border-color: #586e75; --highlight-bg: #001f26; --input-bg: #002b36; }
+        [data-theme="monokai"] { --bg-deep: #272822; --card-bg: #3e3d32; --primary-color: #f8f8f2; --accent-gold: #a6e22e; --text-color: #cfcfc2; --border-color: #75715e; --highlight-bg: #1e1f1c; --input-bg: #272822; }
+        [data-theme="dracula"] { --bg-deep: #282a36; --card-bg: #44475a; --primary-color: #f8f8f2; --accent-gold: #ff79c6; --text-color: #bd93f9; --border-color: #6272a4; --highlight-bg: #1e1f29; --input-bg: #282a36; }
+        [data-theme="pastelpink"] { --bg-deep: #500724; --card-bg: #831843; --primary-color: #fff1f2; --accent-gold: #f472b6; --text-color: #fbcfe8; --border-color: #9d174d; --highlight-bg: #380419; --input-bg: #500724; }
+        [data-theme="mintcream"] { --bg-deep: #042f2e; --card-bg: #134e4a; --primary-color: #f0fdf4; --accent-gold: #5eead4; --text-color: #ccfbf1; --border-color: #115e59; --highlight-bg: #02201f; --input-bg: #042f2e; }
+        [data-theme="golden"] { --bg-deep: #451a03; --card-bg: #78350f; --primary-color: #fffbeb; --accent-gold: #fbbf24; --text-color: #fef3c7; --border-color: #92400e; --highlight-bg: #291001; --input-bg: #451a03; }
+        [data-theme="deepspace"] { --bg-deep: #030712; --card-bg: #111827; --primary-color: #f9fafb; --accent-gold: #818cf8; --text-color: #9ca3af; --border-color: #1f2937; --highlight-bg: #020408; --input-bg: #030712; }
+        [data-theme="rubyred"] { --bg-deep: #500724; --card-bg: #9f1239; --primary-color: #fff1f2; --accent-gold: #fb7185; --text-color: #fecdd3; --border-color: #be123c; --highlight-bg: #380419; --input-bg: #500724; }
+        [data-theme="tealmodern"] { --bg-deep: #042f2e; --card-bg: #0f766e; --primary-color: #f0fdf4; --accent-gold: #2dd4bf; --text-color: #99f6e4; --border-color: #115e59; --highlight-bg: #02201f; --input-bg: #042f2e; }
+        [data-theme="autumngold"] { --bg-deep: #451a03; --card-bg: #b45309; --primary-color: #fffbeb; --accent-gold: #fde047; --text-color: #fef08a; --border-color: #d97706; --highlight-bg: #291001; --input-bg: #451a03; }
+        [data-theme="lavender"] { --bg-deep: #2e1065; --card-bg: #6d28d9; --primary-color: #f5f3ff; --accent-gold: #ddd6fe; --text-color: #ede9fe; --border-color: #7c3aed; --highlight-bg: #1e0b46; --input-bg: #2e1065; }
+        [data-theme="charcoal"] { --bg-deep: #111827; --card-bg: #1f2937; --primary-color: #f9fafb; --accent-gold: #9ca3af; --text-color: #d1d5db; --border-color: #374151; --highlight-bg: #0b0f19; --input-bg: #111827; }
+        [data-theme="amberglow"] { --bg-deep: #451a03; --card-bg: #9a3412; --primary-color: #fff7ed; --accent-gold: #fdba74; --text-color: #ffedd5; --border-color: #c2410c; --highlight-bg: #291001; --input-bg: #451a03; }
+        [data-theme="arcticice"] { --bg-deep: #082f49; --card-bg: #0284c7; --primary-color: #f0f9ff; --accent-gold: #38bdf8; --text-color: #e0f2fe; --border-color: #0369a1; --highlight-bg: #051d2c; --input-bg: #082f49; }
+        [data-theme="olive"] { --bg-deep: #365314; --card-bg: #4d7c0f; --primary-color: #f7fee7; --accent-gold: #bef264; --text-color: #ecfccb; --border-color: #3f6212; --highlight-bg: #23380a; --input-bg: #365314; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+            font-size: var(--base-font-size);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease, border 0.3s ease;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+
+        /* Dynamic Watermark Styles */
+        .container.watermark-cbse::after { content: "CBSE Format"; }
+        .container.watermark-draft::after { content: "Official Draft"; }
+        .container.watermark-confidential::after { content: "Confidential"; }
+        .container.watermark-verified::after { content: "Verified Copy"; }
+        .container.watermark-custom::after { content: attr(data-custom-watermark); }
+
+        .container[class*="watermark-"]::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 70px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.04);
+            pointer-events: none;
+            z-index: 0;
+            font-family: 'Cinzel', serif;
+            white-space: nowrap;
+        }
+
+        .utility-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--highlight-bg);
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .utility-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .utility-group select, .utility-group input {
+            background: var(--input-bg);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .action-toolbar {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .quick-fill-panel {
+            background: var(--highlight-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quick-fill-panel h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: var(--accent-gold);
+            font-family: 'Cinzel', serif;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preset-buttons-box {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        @media(max-width: 768px) {
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .input-grid input {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--primary-color);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-grid input:focus {
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2);
+        }
+
+        .panel-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary-color);
+            font-size: 26px;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        p, .content-block {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: var(--text-color);
+            position: relative;
+            z-index: 1;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .editable {
+            background: rgba(234, 179, 8, 0.08);
+            border-bottom: 1px dashed var(--accent-gold);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-gold);
+            transition: all 0.3s ease;
+        }
+
+        .editable:hover {
+            background: rgba(234, 179, 8, 0.18);
+        }
+
+        .editable:focus {
+            outline: none;
+            background: var(--input-bg);
+            box-shadow: 0 0 0 2px var(--accent-gold);
+            color: var(--primary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 10px 12px;
+            text-align: left;
+            color: var(--text-color);
+        }
+
+        th {
+            background: var(--highlight-bg);
+            color: var(--primary-color);
+            font-family: 'Cinzel', serif;
+        }
+
+        .delete-row-btn {
+            background: transparent;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .delete-row-btn:hover {
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .btn {
+            background: var(--input-bg);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            padding: 9px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+            border-color: var(--accent-gold);
+        }
+
+        .btn-gold {
+            background: var(--accent-gold);
+            color: #090d16;
+            border: none;
+        }
+
+        .btn-gold:hover {
+            background: #facc15;
+            color: #000;
+        }
+
+        .btn-danger {
+            background: #7f1d1d;
+            color: #fef2f2;
+            border: none;
+        }
+        .btn-danger:hover {
+            background: #991b1b;
+        }
+        .live-stats {
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-color);
+    margin-top: 15px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+    </style>
+</head>
+<body data-theme="dark">
+
+    <div class="container watermark-cbse" id="mainContainer" data-custom-watermark="Draft">
+        
+        <!-- Utility Bar -->
+        <div class="utility-bar">
+            <div class="utility-group">
+                <label style="font-size: 12px; font-weight: 600;">🔤 फॉन्ट:</label>
+                <select id="fontSizeSelect" onchange="changeFontSize(this.value)">
+                    <option value="14px">छोटा</option>
+                    <option value="16px" selected>सामान्य</option>
+                    <option value="18px">बड़ा</option>
+                </select>
+            </div>
+            
+            <!-- 33 Themes Dropdown Menu -->
+            <div class="utility-group">
+                <label style="font-size: 12px; font-weight: 600;">🎨 थीम:</label>
+                <select id="themeSelect" onchange="changeThemeMode(this.value)">
+                    <option value="dark" selected>1. डार्क मोड (Obsidian)</option>
+                    <option value="light">2. लाइट मोड (Clean)</option>
+                    <option value="blue">3. प्रो ब्लू (Slate Blue)</option>
+                    <option value="emerald">4. एमेरल्ड ग्रीन (Emerald)</option>
+                    <option value="crimson">5. क्रिमसन रेड (Crimson)</option>
+                    <option value="purple">6. रॉयल पर्पल (Royal Purple)</option>
+                    <option value="sunset">7. सनसेट ऑरेन्ज (Sunset)</option>
+                    <option value="cyberpunk">8. साइबरपंक नियोन (Cyberpunk)</option>
+                    <option value="coffee">9. रिच कॉफ़ी (Coffee)</option>
+                    <option value="midnight">10. मिडनाइट ब्लू (Midnight)</option>
+                    <option value="forest">11. फॉरेस्ट मिस्ट (Forest)</option>
+                    <option value="rosegold">12. रोज़ गोल्ड (Rose Gold)</option>
+                    <option value="ocean">13. ओशन ब्रीज (Ocean)</option>
+                    <option value="matrix">14. मैट्रिक्स ग्रीन (Matrix)</option>
+                    <option value="neonpurple">15. नियोन पर्पल (Neon Purple)</option>
+                    <option value="slateclean">16. स्लेट क्लीन (Slate Clean)</option>
+                    <option value="vintage">17. सेपिया विंटेज (Vintage)</option>
+                    <option value="nordic">18. नॉर्डिक फ्रॉस्ट (Nordic)</option>
+                    <option value="solarized">19. सोलरराइज्ड डार्क (Solarized)</option>
+                    <option value="monokai">20. मोनोकि प्रो (Monokai)</option>
+                    <option value="dracula">21. ड्रैकुला डार्क (Dracula)</option>
+                    <option value="pastelpink">22. पेस्टल पिंक (Pastel Pink)</option>
+                    <option value="mintcream">23. मिंट क्रीम (Mint Cream)</option>
+                    <option value="golden">24. गोल्डन लग्जरी (Golden)</option>
+                    <option value="deepspace">25. डीप स्पेस (Deep Space)</option>
+                    <option value="rubyred">26. रूबी रेड (Ruby Red)</option>
+                    <option value="tealmodern">27. टील मॉडर्न (Teal Modern)</option>
+                    <option value="autumngold">28. ऑटम गोल्ड (Autumn Gold)</option>
+                    <option value="lavender">29. लैवेंडर ड्रीम (Lavender)</option>
+                    <option value="charcoal">30. चारकोल स्टील (Charcoal)</option>
+                    <option value="amberglow">31. एम्बर ग्लो (Amber Glow)</option>
+                    <option value="arcticice">32. आर्कटिक आइस (Arctic Ice)</option>
+                    <option value="olive">33. ओलिव मिलिट्री (Olive)</option>
+                </select>
+            </div>
+
+            <!-- Enhanced Watermark Dropdown Menu -->
+            <div class="utility-group">
+                <label style="font-size: 12px; font-weight: 600;">🛡️ वाटरमार्क:</label>
+                <select id="watermarkSelect" onchange="handleWatermarkChange(this.value)">
+                    <option value="watermark-cbse" selected>CBSE Format</option>
+                    <option value="watermark-draft">Official Draft</option>
+                    <option value="watermark-confidential">Confidential</option>
+                    <option value="watermark-verified">Verified Copy</option>
+                    <option value="watermark-custom">खुद टाइप करें...</option>
+                    <option value="none">कोई नहीं</option>
+                </select>
+                <input type="text" id="customWatermarkInput" placeholder="कस्टम वाटरमार्क लिखें..." style="display:none; width:130px;" oninput="updateCustomWatermark(this.value)">
+            </div>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="action-toolbar">
+            <button class="btn btn-gold" onclick="window.print()">🖨️ प्रिंट / पीडीएफ</button>
+            <button class="btn" onclick="copyLetterContent()">📋 कॉपी करें</button>
+            <button class="btn btn-danger" onclick="resetAllData()">🔄 रीसेट</button>
+        </div>
+
+        <!-- Expanded Smart Data Filler Panel -->
+        <div class="quick-fill-panel">
+            <h3 style="font-size: 17px; font-weight: 900; color: var(--accent-gold); align-self: center;">⚡ स्मार्ट डेटा फिलर और प्री-सेट प्रोफाइल्स </h3>
+            <div class="preset-buttons-box">
+                <span style="font-size: 15px; font-weight: 600; color: var(--accent-gold); align-self: center; margin-bottom: -16px;">वन-क्लिक प्रोफाइल्स:</span>
+                <button style="font-size: 11px; padding: 4px 10px;" class="btn live-stats" onclick="fillPreset('order')">📦 1. Placing an Order</button>
+                <button style="font-size: 11px; padding: 4px 10px;" class="btn live-stats" onclick="fillPreset('cancel')">❌ 2. Cancelling an Order</button>
+                <button style="font-size: 11px; padding: 4px 10px;" class="btn live-stats" onclick="fillPreset('complaint')">⚠️ 3. Making a Complaint</button>
+            </div>
+            
+            <div class="input-grid">
+                <input type="text" id="inputSenderAddress" placeholder="प्रेषक का पता (Sender Address)" oninput="syncFields()">
+                <input type="text" id="inputSenderCity" placeholder="प्रेषक का शहर/राज्य (Sender City)" oninput="syncFields()">
+                <input type="text" id="inputLetterDate" placeholder="दिनांक (Letter Date)" oninput="syncFields()">
+                <input type="text" id="inputReceiverDesignation" placeholder="प्राप्तकर्ता पद (Receiver Designation)" oninput="syncFields()">
+                <input type="text" id="inputReceiverCompany" placeholder="कंपनी/फर्म का नाम (Receiver Company)" oninput="syncFields()">
+                <input type="text" id="inputReceiverCity" placeholder="प्राप्तकर्ता शहर (Receiver City)" oninput="syncFields()">
+                <input type="text" id="inputSubject" placeholder="विषय (Subject)" oninput="syncFields()">
+                <input type="text" id="inputBodyIntro" placeholder="परिचय पंक्ति (Body Intro Text)" oninput="syncFields()">
+                <input type="text" id="inputBodyDetail" placeholder="विस्तृत विवरण पंक्ति (Body Detail Text)" oninput="syncFields()">
+                <input type="text" id="inputBodyConclusion" placeholder="निष्कर्ष पंक्ति (Conclusion Text)" oninput="syncFields()">
+                <input type="text" id="inputYourName" placeholder="आपका नाम (Your Name)" oninput="syncFields()">
+                <input type="text" id="inputYourDesignation" placeholder="आपका पद (Your Designation)" oninput="syncFields()">
+            </div>
+
+            <div class="panel-actions">
+                <button class="btn btn-gold" onclick="applySmartData()" style="flex: 1; justify-content: center;">✨ डेटा ऑटो-फिल करें</button>
+                <button class="btn btn-danger" style="flex: 1; justify-content: center;" onclick="clearInputs()">🗑️ इनपुट खाली करें</button>
+            </div>
+        </div>
+
+        <h1>CBSE Business Letter</h1>
+
+        <!-- Letter Content Structure with Expanded Professional Body Text -->
+        <p><span class="content-block editable" contenteditable="true" id="senderAddress">[प्रेषक का पता]</span><br>
+        <span class="content-block editable" contenteditable="true" id="senderCity">[प्रेषक का शहर और पिन कोड]</span></p>
+
+        <p><span class="content-block editable" contenteditable="true" id="letterDate">[दिनांक]</span></p>
+
+        <p><span class="content-block editable" contenteditable="true" id="receiverDesignation">[प्राप्तकर्ता का पद]</span>,<br>
+        <span class="content-block editable" contenteditable="true" id="receiverCompany">[कंपनी या फर्म का नाम]</span>,<br>
+        <span class="content-block editable" contenteditable="true" id="receiverCity">[प्राप्तकर्ता का शहर]</span></p>
+
+        <p><strong>Subject:</strong> <span class="content-block editable" contenteditable="true" id="letterSubject">[यहाँ पत्र का विषय लिखें]</span></p>
+
+        <p>Sir/Madam,</p>
+
+        <p>With reference to the aforementioned subject and in continuation of our previous business correspondence, I am writing this official communication on behalf of our institution to draw your kind and immediate attention toward <span class="content-block editable" contenteditable="true" id="bodyIntro">[परिचय संबंधी मुख्य कारण यहाँ लिखें]</span>. We have consistently valued our professional association with your esteemed organization; however, certain critical operational requirements necessitate a formal and transparent dialogue at the earliest.</p>
+
+        <p>I would like to elaborate in detail that our management and administrative department are currently facing severe logistical constraints due to pending execution and delayed commercial commitments. <span class="content-block editable" contenteditable="true" id="bodyDetail">[विस्तृत विवरण या आवश्यकताओं की सूची यहाँ लिखें]</span>. It is imperative that these bottlenecks are resolved systematically to prevent any disruption in our institutional services and ongoing academic schedules.</p>
+
+        <!-- Dynamic Table Container -->
+        <div id="tableContainer">
+            <table id="itemTable">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Item Description</th>
+                        <th>Brand/Model</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>1</td>
+                        <td><span contenteditable="true">[सामान का नाम]</span></td>
+                        <td><span contenteditable="true">[ब्रांड]</span></td>
+                        <td><span contenteditable="true">[संख्या]</span></td>
+                        <td><button class="delete-row-btn" onclick="deleteRow(this)">हटाएं</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-gold add-row-btn" style="margin-top: 10px;" onclick="addNewRow()">+ Add New Row</button>
+        </div>
+
+        <p style="margin-top: 25px;">Therefore, keeping in view the urgency, adherence to quality standards, and strict timelines, you are earnestly requested to look into this matter personally and initiate prompt corrective measures. <span class="content-block editable" contenteditable="true" id="bodyConclusion">[निष्कर्ष या कार्रवाई की मांग संबंधी वाक्य यहाँ लिखें]</span>. We anticipate your positive response, timely fulfillment of our order, and an expedited confirmation of dispatch within the next three working days.</p>
+
+        <p>Thanking you in anticipation for your prompt cooperation and professional courtesy.</p>
+
+        <p>Yours faithfully,</p>
+        <p><span class="content-block editable" contenteditable="true" id="yourName">[आपका नाम]</span><br>
+        <span class="content-block editable" contenteditable="true" id="yourDesignation">[आपका पद / डेजिग्नेशन]</span></p>
+
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            loadFromStorage();
+        });
+
+        function changeFontSize(size) {
+            document.documentElement.style.setProperty('--base-font-size', size);
+            localStorage.setItem('cbse_font_size', size);
+        }
+
+        function changeThemeMode(themeName) {
+            document.body.setAttribute('data-theme', themeName);
+            localStorage.setItem('cbse_theme', themeName);
+        }
+
+        function handleWatermarkChange(wmVal) {
+            const container = document.getElementById('mainContainer');
+            const customInput = document.getElementById('customWatermarkInput');
+            
+            if (wmVal === 'watermark-custom') {
+                customInput.style.display = 'inline-block';
+                container.className = 'container watermark-custom';
+                container.setAttribute('data-custom-watermark', customInput.value || 'Draft');
+            } else {
+                customInput.style.display = 'none';
+                container.className = 'container ' + (wmVal !== 'none' ? wmVal : '');
+            }
+            localStorage.setItem('cbse_watermark_type', wmVal);
+        }
+
+        function updateCustomWatermark(val) {
+            const container = document.getElementById('mainContainer');
+            container.setAttribute('data-custom-watermark', val || 'Draft');
+            localStorage.setItem('cbse_custom_wm_text', val);
+        }
+
+        function addNewRow() {
+            const tbody = document.getElementById('tableBody');
+            const rowCount = tbody.rows.length + 1;
+            const newRow = tbody.insertRow();
+            newRow.innerHTML = `
+                <td>${rowCount}</td>
+                <td><span contenteditable="true">[सामान का नाम]</span></td>
+                <td><span contenteditable="true">[ब्रांड]</span></td>
+                <td><span contenteditable="true">[संख्या]</span></td>
+                <td><button class="delete-row-btn" onclick="deleteRow(this)">हटाएं</button></td>
+            `;
+        }
+
+        function deleteRow(btn) {
+            const row = btn.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+            updateSerialNumbers();
+        }
+
+        function updateSerialNumbers() {
+            const rows = document.getElementById('tableBody').rows;
+            for (let i = 0; i < rows.length; i++) {
+                rows[i].cells[0].innerText = i + 1;
+            }
+        }
+
+        function fillPreset(type) {
+            const tableContainer = document.getElementById('tableContainer');
+            
+            if (type === 'order') {
+                document.getElementById('inputSenderAddress').value = 'ABC Public School, Sector 15';
+                document.getElementById('inputSenderCity').value = 'Sirsa, Haryana - 125055';
+                document.getElementById('inputLetterDate').value = 'October 5, 2026';
+                document.getElementById('inputReceiverDesignation').value = 'The Sales Manager';
+                document.getElementById('inputReceiverCompany').value = 'M/S Apex Sports Corporation';
+                document.getElementById('inputReceiverCity').value = 'New Delhi';
+                document.getElementById('inputSubject').value = 'Placing an order for sports equipment and gear.';
+                document.getElementById('inputBodyIntro').value = 'the urgent procurement of required high-grade educational and sports materials';
+                document.getElementById('inputBodyDetail').value = 'We wish to place a bulk purchase order as per the strict specifications, catalog guidelines, and institutional requirements provided below';
+                document.getElementById('inputBodyConclusion').value = 'Kindly ensure safe door-step delivery, proper packaging, and necessary institutional discount at your earliest convenience';
+                document.getElementById('inputYourName').value = 'Kuldeep';
+                document.getElementById('inputYourDesignation').value = 'Sports Secretary / Purchase Manager';
+                tableContainer.style.display = 'block';
+            } else if (type === 'cancel') {
+                document.getElementById('inputSenderAddress').value = 'ABC Public School, Sector 15';
+                document.getElementById('inputSenderCity').value = 'Sirsa, Haryana - 125055';
+                document.getElementById('inputLetterDate').value = 'October 6, 2026';
+                document.getElementById('inputReceiverDesignation').value = 'The General Manager';
+                document.getElementById('inputReceiverCompany').value = 'M/S Global Traders';
+                document.getElementById('inputReceiverCity').value = 'Chandigarh';
+                document.getElementById('inputSubject').value = 'Cancellation of order no. ORD-2026-098 due to unreasonable delay.';
+                document.getElementById('inputBodyIntro').value = 'the inordinate and unacceptable delay in the execution and delivery of our official order';
+                document.getElementById('inputBodyDetail').value = 'Despite our several reminders and telephonic follow-ups, your firm has continuously failed to honor the mutually agreed delivery timeline and contractual obligations';
+                document.getElementById('inputBodyConclusion').value = 'Kindly treat this correspondence as formal order cancellation and initiate the immediate refund of our advance payment without any deduction';
+                document.getElementById('inputYourName').value = 'Kuldeep';
+                document.getElementById('inputYourDesignation').value = 'Administrative Officer';
+                tableContainer.style.display = 'none';
+            } else if (type === 'complaint') {
+                document.getElementById('inputSenderAddress').value = 'ABC Public School, Sector 15';
+                document.getElementById('inputSenderCity').value = 'Sirsa, Haryana - 125055';
+                document.getElementById('inputLetterDate').value = 'October 7, 2026';
+                document.getElementById('inputReceiverDesignation').value = 'The Proprietor';
+                document.getElementById('inputReceiverCompany').value = 'M/S Bright Electronics';
+                document.getElementById('inputReceiverCity').value = 'Ambala';
+                document.getElementById('inputSubject').value = 'Strong complaint regarding supply of defective and substandard goods.';
+                document.getElementById('inputBodyIntro').value = 'the supply of substandard, defective, and physically damaged goods received via our recent commercial shipment';
+                document.getElementById('inputBodyDetail').value = 'Upon physical inspection of the consignment at our laboratory, we found that most items are non-functional, poorly packaged, and completely fail to match the approved sample standards';
+                document.getElementById('inputBodyConclusion').value = 'Kindly arrange for an immediate inspection, pickup, and replacement of all damaged items at your sole business expense without further delay';
+                document.getElementById('inputYourName').value = 'Kuldeep';
+                document.getElementById('inputYourDesignation').value = 'Lab In-charge / Purchase Manager';
+                tableContainer.style.display = 'block';
+            }
+            applySmartData();
+        }
+
+        function applySmartData() {
+            if(document.getElementById('inputSenderAddress').value) document.getElementById('senderAddress').innerText = document.getElementById('inputSenderAddress').value;
+            if(document.getElementById('inputSenderCity').value) document.getElementById('senderCity').innerText = document.getElementById('inputSenderCity').value;
+            if(document.getElementById('inputLetterDate').value) document.getElementById('letterDate').innerText = document.getElementById('inputLetterDate').value;
+            if(document.getElementById('inputReceiverDesignation').value) document.getElementById('receiverDesignation').innerText = document.getElementById('inputReceiverDesignation').value;
+            if(document.getElementById('inputReceiverCompany').value) document.getElementById('receiverCompany').innerText = document.getElementById('inputReceiverCompany').value;
+            if(document.getElementById('inputReceiverCity').value) document.getElementById('receiverCity').innerText = document.getElementById('inputReceiverCity').value;
+            if(document.getElementById('inputSubject').value) document.getElementById('letterSubject').innerText = document.getElementById('inputSubject').value;
+            if(document.getElementById('inputBodyIntro').value) document.getElementById('bodyIntro').innerText = document.getElementById('inputBodyIntro').value;
+            if(document.getElementById('inputBodyDetail').value) document.getElementById('bodyDetail').innerText = document.getElementById('inputBodyDetail').value;
+            if(document.getElementById('inputBodyConclusion').value) document.getElementById('bodyConclusion').innerText = document.getElementById('inputBodyConclusion').value;
+            if(document.getElementById('inputYourName').value) document.getElementById('yourName').innerText = document.getElementById('inputYourName').value;
+            if(document.getElementById('inputYourDesignation').value) document.getElementById('yourDesignation').innerText = document.getElementById('inputYourDesignation').value;
+            
+            saveToStorage();
+        }
+
+        function clearInputs() {
+            document.querySelectorAll('.quick-fill-panel input').forEach(input => input.value = '');
+        }
+
+        function syncFields() {
+            applySmartData();
+        }
+
+        function copyLetterContent() {
+            const containerText = document.getElementById('mainContainer').innerText;
+            navigator.clipboard.writeText(containerText).then(() => {
+                alert('लेटर का पूरा कंटेंट क्लिपबोर्ड पर कॉपी हो गया है!');
+            });
+        }
+
+        function resetAllData() {
+            if(confirm('क्या आप सभी डेटा को रीसेट करना चाहते हैं?')) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        function saveToStorage() {
+            const data = {
+                senderAddress: document.getElementById('senderAddress').innerText,
+                senderCity: document.getElementById('senderCity').innerText,
+                letterDate: document.getElementById('letterDate').innerText,
+                receiverDesignation: document.getElementById('receiverDesignation').innerText,
+                receiverCompany: document.getElementById('receiverCompany').innerText,
+                receiverCity: document.getElementById('receiverCity').innerText,
+                letterSubject: document.getElementById('letterSubject').innerText,
+                bodyIntro: document.getElementById('bodyIntro').innerText,
+                bodyDetail: document.getElementById('bodyDetail').innerText,
+                bodyConclusion: document.getElementById('bodyConclusion').innerText,
+                yourName: document.getElementById('yourName').innerText,
+                yourDesignation: document.getElementById('yourDesignation').innerText
+            };
+            localStorage.setItem('cbse_letter_data', JSON.stringify(data));
+        }
+
+        function loadFromStorage() {
+            const savedTheme = localStorage.getItem('cbse_theme');
+            if (savedTheme) {
+                document.body.setAttribute('data-theme', savedTheme);
+                document.getElementById('themeSelect').value = savedTheme;
+            }
+
+            const savedFont = localStorage.getItem('cbse_font_size');
+            if (savedFont) {
+                document.documentElement.style.setProperty('--base-font-size', savedFont);
+                document.getElementById('fontSizeSelect').value = savedFont;
+            }
+
+            const savedWmType = localStorage.getItem('cbse_watermark_type');
+            if (savedWmType) {
+                document.getElementById('watermarkSelect').value = savedWmType;
+                handleWatermarkChange(savedWmType);
+            }
+
+            const savedCustomText = localStorage.getItem('cbse_custom_wm_text');
+            if (savedCustomText) {
+                document.getElementById('customWatermarkInput').value = savedCustomText;
+                updateCustomWatermark(savedCustomText);
+            }
+
+            const savedData = localStorage.getItem('cbse_letter_data');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                if(data.senderAddress) { document.getElementById('senderAddress').innerText = data.senderAddress; document.getElementById('inputSenderAddress').value = data.senderAddress; }
+                if(data.senderCity) { document.getElementById('senderCity').innerText = data.senderCity; document.getElementById('inputSenderCity').value = data.senderCity; }
+                if(data.letterDate) { document.getElementById('letterDate').innerText = data.letterDate; document.getElementById('inputLetterDate').value = data.letterDate; }
+                if(data.receiverDesignation) { document.getElementById('receiverDesignation').innerText = data.receiverDesignation; document.getElementById('inputReceiverDesignation').value = data.receiverDesignation; }
+                if(data.receiverCompany) { document.getElementById('receiverCompany').innerText = data.receiverCompany; document.getElementById('inputReceiverCompany').value = data.receiverCompany; }
+                if(data.receiverCity) { document.getElementById('receiverCity').innerText = data.receiverCity; document.getElementById('inputReceiverCity').value = data.receiverCity; }
+                if(data.letterSubject) { document.getElementById('letterSubject').innerText = data.letterSubject; document.getElementById('inputSubject').value = data.letterSubject; }
+                if(data.bodyIntro) { document.getElementById('bodyIntro').innerText = data.bodyIntro; document.getElementById('inputBodyIntro').value = data.bodyIntro; }
+                if(data.bodyDetail) { document.getElementById('bodyDetail').innerText = data.bodyDetail; document.getElementById('inputBodyDetail').value = data.bodyDetail; }
+                if(data.bodyConclusion) { document.getElementById('bodyConclusion').innerText = data.bodyConclusion; document.getElementById('inputBodyConclusion').value = data.bodyConclusion; }
+                if(data.yourName) { document.getElementById('yourName').innerText = data.yourName; document.getElementById('inputYourName').value = data.yourName; }
+                if(data.yourDesignation) { document.getElementById('yourDesignation').innerText = data.yourDesignation; document.getElementById('inputYourDesignation').value = data.yourDesignation; }
+            }
+        }
+    </script>
+</body>
+</html>
